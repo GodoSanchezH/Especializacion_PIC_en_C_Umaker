@@ -1,5 +1,5 @@
 __S0 20000 0 ABS 0
-__S1 503 0 ABS 0
+__S1 0 0 ABS 0
 __S2 0 0 ABS 0
 __S4 0 0 ABS 0
 __S5 0 0 ABS 0
@@ -24,7 +24,7 @@ _WPUD 419 0 ABS 0
 _WPUE 421 0 ABS 0
 _WPUF 429 0 ABS 0
 __end_of_PIN_MANAGER_Initialize 1FFFC 0 CODE 0
-_main 1FF14 0 CODE 0
+_main 1FF18 0 CODE 0
 ___sp 0 0 STACK 2
 start 1FFFC 0 CODE 0
 _TRISA 4C6 0 ABS 0
@@ -115,18 +115,19 @@ __Lrbit 0 0 COMRAM 1
 __Hinit 20000 0 CODE 0
 __Linit 1FFFC 0 CODE 0
 __Hrbss 0 0 COMRAM 1
-__end_of_main 1FF5E 0 CODE 0
+__end_of_main 1FF3A 0 CODE 0
 __Lrbss 0 0 COMRAM 1
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
-end_of_initialization 1FEC0 0 CODE 0
+end_of_initialization 1FEE8 0 CODE 0
 _OSCCON1 AD 0 ABS 0
 _OSCCON3 AF 0 ABS 0
+_PORTBbits 4CF 0 ABS 0
 _SLRCONA 403 0 ABS 0
 _SLRCONB 40B 0 ABS 0
 _SLRCONC 413 0 ABS 0
 _SLRCOND 41B 0 ABS 0
-_SYSTEM_Initialize 1FEC6 0 CODE 0
+_SYSTEM_Initialize 1FEEE 0 CODE 0
 _SLRCONE 423 0 ABS 0
 __Hibigdata 0 0 CODE 0
 _SLRCONF 42B 0 ABS 0
@@ -150,20 +151,20 @@ __Hbank9 0 0 ABS 0
 __Lbank9 0 0 ABS 0
 __Htext1 0 0 ABS 0
 __Ltext1 0 0 ABS 0
-__ptext0 1FF14 0 CODE 0
+__ptext0 1FF18 0 CODE 0
 __Htext2 0 0 ABS 0
 __Ltext2 0 0 ABS 0
-__ptext1 1FEC6 0 CODE 0
+__ptext1 1FEEE 0 CODE 0
 __Htext3 0 0 ABS 0
 __Ltext3 0 0 ABS 0
-__ptext2 1FEF0 0 CODE 0
+__ptext2 1FF3A 0 CODE 0
 __Htext4 0 0 ABS 0
 __Ltext4 0 0 ABS 0
 __ptext3 1FF5E 0 CODE 0
-__ptext4 1FED4 0 CODE 0
+__ptext4 1FEFC 0 CODE 0
 __Hclrtext 0 0 ABS 0
 __Lclrtext 0 0 ABS 0
-__end_of__initialization 1FEC0 0 CODE 0
+__end_of__initialization 1FEE8 0 CODE 0
 ___rparam_used 1 0 ABS 0
 __Hidata 0 0 CODE 0
 __Lidata 0 0 CODE 0
@@ -179,8 +180,8 @@ __Hspace_0 20000 0 ABS 0
 __HcstackCOMRAM 0 0 ABS 0
 __Lspace_0 0 0 ABS 0
 __LcstackCOMRAM 0 0 ABS 0
-__pcstackCOMRAM 501 0 COMRAM 1
-__Hspace_1 503 0 ABS 0
+__pcstackCOMRAM 0 0 COMRAM 1
+__Hspace_1 0 0 ABS 0
 __Lspace_1 0 0 ABS 0
 __Hsmallconst 0 0 SMALLCONST 0
 __Lsmallconst 0 0 SMALLCONST 0
@@ -190,8 +191,8 @@ __Hnvbit 0 0 COMRAM 1
 __Lnvbit 0 0 COMRAM 1
 __Hcinit 0 0 ABS 0
 __Lcinit 0 0 ABS 0
-__end_of_PMD_Initialize 1FF14 0 CODE 0
-__pcinit 1FEC0 0 CODE 0
+__end_of_PMD_Initialize 1FF5E 0 CODE 0
+__pcinit 1FEE8 0 CODE 0
 __ramtop 2600 0 RAM 0
 __mediumconst 0 0 MEDIUMCONST 0
 __size_of_main 0 0 ABS 0
@@ -211,12 +212,12 @@ __Lbank30 0 0 ABS 0
 __Lbank11 0 0 ABS 0
 __Hbank21 0 0 ABS 0
 __Lbank21 0 0 ABS 0
-__end_of_OSCILLATOR_Initialize 1FEF0 0 CODE 0
+__end_of_OSCILLATOR_Initialize 1FF18 0 CODE 0
 __Hbank31 0 0 ABS 0
 __Hbank12 0 0 ABS 0
 __Lbank31 0 0 ABS 0
 __Lbank12 0 0 ABS 0
-__end_of_SYSTEM_Initialize 1FED4 0 CODE 0
+__end_of_SYSTEM_Initialize 1FEFC 0 CODE 0
 __Hbank22 0 0 ABS 0
 __Lbank22 0 0 ABS 0
 __Hbank32 0 0 ABS 0
@@ -262,8 +263,8 @@ __Lbank29 0 0 ABS 0
 __size_of_PMD_Initialize 0 0 ABS 0
 ___inthi_sp 0 0 STACK 2
 ___intlo_sp 0 0 STACK 2
-_PMD_Initialize 1FEF0 0 CODE 0
-_OSCILLATOR_Initialize 1FED4 0 CODE 0
+_PMD_Initialize 1FF3A 0 CODE 0
+_OSCILLATOR_Initialize 1FEFC 0 CODE 0
 __smallconst 0 0 SMALLCONST 0
 __Hreset_vec 4 0 CODE 0
 __Lreset_vec 0 0 CODE 0
@@ -273,52 +274,52 @@ intlevel0 0 0 CODE 0
 intlevel1 0 0 CODE 0
 intlevel2 0 0 CODE 0
 intlevel3 0 0 CODE 0
-start_initialization 1FEC0 0 CODE 0
+start_initialization 1FEE8 0 CODE 0
 __size_of_OSCILLATOR_Initialize 0 0 ABS 0
-__initialization 1FEC0 0 CODE 0
+__initialization 1FEE8 0 CODE 0
 __activetblptr 0 0 ABS 0
 %segments
 reset_vec 0 3 CODE 0 0
 init 1FFFC 1FFFF CODE 1FFFC 0
-cstackCOMRAM 501 502 COMRAM 501 1
 text3 1FF5E 1FFFB CODE 1FF5E 0
-text0 1FF14 1FF5D CODE 1FF14 0
-text2 1FEF0 1FF13 CODE 1FEF0 0
-text4 1FED4 1FEEF CODE 1FED4 0
-text1 1FEC6 1FED3 CODE 1FEC6 0
-cinit 1FEC0 1FEC5 CODE 1FEC0 0
+text2 1FF3A 1FF5D CODE 1FF3A 0
+text0 1FF18 1FF39 CODE 1FF18 0
+text4 1FEFC 1FF17 CODE 1FEFC 0
+text1 1FEEE 1FEFB CODE 1FEEE 0
+cinit 1FEE8 1FEED CODE 1FEE8 0
 %locals
 dist/default/production\Ejemplo0.X.production.o
 C:/Users/HP/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f57q43.h
-C:\Users\HP\AppData\Local\Temp\xcAs10g0.s
-5384 1FEC0 0 CODE 0
-5386 1FEC0 0 CODE 0
-5389 1FEC0 0 CODE 0
-5395 1FEC0 0 CODE 0
-5397 1FEC0 0 CODE 0
-5398 1FEC2 0 CODE 0
+C:\Users\HP\AppData\Local\Temp\xcAstfg.s
+5386 1FEE8 0 CODE 0
+5388 1FEE8 0 CODE 0
+5391 1FEE8 0 CODE 0
+5397 1FEE8 0 CODE 0
+5399 1FEE8 0 CODE 0
+5400 1FEEA 0 CODE 0
 main.c
-7 1FF14 0 CODE 0
-10 1FF14 0 CODE 0
-24 1FF18 0 CODE 0
-25 1FF3E 0 CODE 0
+7 1FF18 0 CODE 0
+10 1FF18 0 CODE 0
+31 1FF1C 0 CODE 0
+32 1FF2A 0 CODE 0
+35 1FF30 0 CODE 0
 mcc_generated_files/mcc.c
-50 1FEC6 0 CODE 0
-52 1FEC6 0 CODE 0
-53 1FECA 0 CODE 0
-54 1FECE 0 CODE 0
-55 1FED2 0 CODE 0
+50 1FEEE 0 CODE 0
+52 1FEEE 0 CODE 0
+53 1FEF2 0 CODE 0
+54 1FEF6 0 CODE 0
+55 1FEFA 0 CODE 0
 mcc_generated_files/mcc.c
-73 1FEF0 0 CODE 0
-76 1FEF0 0 CODE 0
-78 1FEF6 0 CODE 0
-80 1FEFA 0 CODE 0
-82 1FEFE 0 CODE 0
-84 1FF02 0 CODE 0
-86 1FF06 0 CODE 0
-88 1FF0A 0 CODE 0
-90 1FF0E 0 CODE 0
-91 1FF12 0 CODE 0
+73 1FF3A 0 CODE 0
+76 1FF3A 0 CODE 0
+78 1FF40 0 CODE 0
+80 1FF44 0 CODE 0
+82 1FF48 0 CODE 0
+84 1FF4C 0 CODE 0
+86 1FF50 0 CODE 0
+88 1FF54 0 CODE 0
+90 1FF58 0 CODE 0
+91 1FF5C 0 CODE 0
 mcc_generated_files/pin_manager.c
 55 1FF5E 0 CODE 0
 60 1FF5E 0 CODE 0
@@ -369,11 +370,11 @@ mcc_generated_files/pin_manager.c
 133 1FFF8 0 CODE 0
 141 1FFFA 0 CODE 0
 mcc_generated_files/mcc.c
-57 1FED4 0 CODE 0
-60 1FED4 0 CODE 0
-62 1FEDA 0 CODE 0
-64 1FEDE 0 CODE 0
-66 1FEE2 0 CODE 0
-68 1FEE6 0 CODE 0
-70 1FEEA 0 CODE 0
-71 1FEEE 0 CODE 0
+57 1FEFC 0 CODE 0
+60 1FEFC 0 CODE 0
+62 1FF02 0 CODE 0
+64 1FF06 0 CODE 0
+66 1FF0A 0 CODE 0
+68 1FF0E 0 CODE 0
+70 1FF12 0 CODE 0
+71 1FF16 0 CODE 0

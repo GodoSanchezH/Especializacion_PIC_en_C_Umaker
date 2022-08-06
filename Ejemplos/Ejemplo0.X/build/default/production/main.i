@@ -28619,9 +28619,9 @@ unsigned char __t3rd16on(void);
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 118 "./mcc_generated_files/pin_manager.h"
+# 138 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 130 "./mcc_generated_files/pin_manager.h"
+# 150 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -28680,7 +28680,20 @@ void main(void)
 # 22 "main.c"
     while (1)
     {
-        do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
-        _delay((unsigned long)((400)*(64000000/4000.0)));
+
+
+
+
+
+
+
+        if (PORTBbits.RB4 == 0) {
+            do { LATFbits.LATF3 = 0; } while(0);
+        }
+        else {
+            do { LATFbits.LATF3 = 1; } while(0);
+        }
+
+
     }
 }

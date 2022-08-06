@@ -28614,9 +28614,9 @@ unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:/Users/HP/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\\pic\\include\\xc.h" 2 3
 # 54 "mcc_generated_files/pin_manager.h" 2
-# 118 "mcc_generated_files/pin_manager.h"
+# 138 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 130 "mcc_generated_files/pin_manager.h"
+# 150 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 49 "mcc_generated_files/pin_manager.c" 2
 
@@ -28641,7 +28641,7 @@ void PIN_MANAGER_Initialize(void)
 
 
     TRISE = 0x07;
-    TRISF = 0xF7;
+    TRISF = 0xF3;
     TRISA = 0xFF;
     TRISB = 0xFF;
     TRISC = 0xFF;

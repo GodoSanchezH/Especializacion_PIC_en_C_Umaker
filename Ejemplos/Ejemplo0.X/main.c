@@ -20,9 +20,22 @@ void main(void)
     //INTERRUPT_GlobalInterruptDisable();
 
     while (1)
-    {
-        LED0_Toggle();
+    {  //****bLINK LED***
+        /*   LED0_Toggle();
         __delay_ms(400);
+         */
+        
+       /*BUTTON
+
+        */
+        if (SW0_GetValue() == 0) {
+            LED0_SetLow();
+        }
+        else {    
+            LED0_SetHigh();
+        }
+
+       
     }
 }
 /**

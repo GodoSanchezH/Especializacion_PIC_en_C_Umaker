@@ -3,7 +3,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 "69 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 69: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"47637 C:/Users/HP/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f57q43.h
+"48103 C:/Users/HP/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f57q43.h
+[; ;C:/Users/HP/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f57q43.h: 48103:     struct {
+[s S2238 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2238 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
+"48102
+[; ;C:/Users/HP/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f57q43.h: 48102: typedef union {
+[u S2237 `S2238 1 ]
+[n S2237 . . ]
+"48114
+[; ;C:/Users/HP/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f57q43.h: 48114: extern volatile PORTBbits_t PORTBbits __attribute__((address(0x4CF)));
+[v _PORTBbits `VS2237 ~T0 @X0 0 e@1231 ]
+"47637
 [; ;C:/Users/HP/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f57q43.h: 47637:     struct {
 [s S2222 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S2222 . LATF0 LATF1 LATF2 LATF3 LATF4 LATF5 LATF6 LATF7 ]
@@ -14,10 +25,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "47648
 [; ;C:/Users/HP/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f57q43.h: 47648: extern volatile LATFbits_t LATFbits __attribute__((address(0x4C3)));
 [v _LATFbits `VS2221 ~T0 @X0 0 e@1219 ]
-[v F183 `(v ~T0 @X0 1 tf1`ul ]
-"12 C:/Users/HP/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\builtins.h
-[v __delay `JF183 ~T0 @X0 0 e ]
-[p i __delay ]
 "329 C:/Users/HP/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f57q43.h
 [; ;C:/Users/HP/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f57q43.h: 329: __asm("CLKRCON equ 039h");
 [; <" CLKRCON equ 039h ;# ">
@@ -2589,23 +2596,43 @@ Version 4.0 HI-TECH Software Intermediate Code
 "23
 [; ;main.c: 23:     {
 {
-"24
-[; ;main.c: 24:         do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
-[e :U 2349 ]
+"31
+[; ;main.c: 31:         if (PORTBbits.RB4 == 0) {
+[e $ ! == -> . . _PORTBbits 0 4 `i -> 0 `i 2347  ]
 {
-[e = . . _LATFbits 0 3 -> ~ -> . . _LATFbits 0 3 `i `uc ]
+"32
+[; ;main.c: 32:             do { LATFbits.LATF3 = 0; } while(0);
+[e :U 2350 ]
+{
+[e = . . _LATFbits 0 3 -> -> 0 `i `uc ]
 }
-[e :U 2348 ]
-"25
-[; ;main.c: 25:         _delay((unsigned long)((400)*(64000000/4000.0)));
-[e ( __delay (1 -> * -> -> 400 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
-"26
-[; ;main.c: 26:     }
+[e :U 2349 ]
+"33
+[; ;main.c: 33:         }
+}
+[e $U 2351  ]
+"34
+[; ;main.c: 34:         else {
+[e :U 2347 ]
+{
+"35
+[; ;main.c: 35:             do { LATFbits.LATF3 = 1; } while(0);
+[e :U 2354 ]
+{
+[e = . . _LATFbits 0 3 -> -> 1 `i `uc ]
+}
+[e :U 2353 ]
+"36
+[; ;main.c: 36:         }
+}
+[e :U 2351 ]
+"39
+[; ;main.c: 39:     }
 }
 [e :U 2344 ]
 [e $U 2345  ]
 [e :U 2346 ]
-"27
-[; ;main.c: 27: }
+"40
+[; ;main.c: 40: }
 [e :UE 2343 ]
 }

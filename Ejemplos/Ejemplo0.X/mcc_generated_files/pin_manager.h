@@ -85,6 +85,26 @@
 #define SW0_SetAnalogMode()      do { ANSELBbits.ANSELB4 = 1; } while(0)
 #define SW0_SetDigitalMode()     do { ANSELBbits.ANSELB4 = 0; } while(0)
 
+// get/set rele aliases
+#define rele_TRIS                 TRISFbits.TRISF2
+#define rele_LAT                  LATFbits.LATF2
+#define rele_PORT                 PORTFbits.RF2
+#define rele_WPU                  WPUFbits.WPUF2
+#define rele_OD                   ODCONFbits.ODCF2
+#define rele_ANS                  ANSELFbits.ANSELF2
+#define rele_SetHigh()            do { LATFbits.LATF2 = 1; } while(0)
+#define rele_SetLow()             do { LATFbits.LATF2 = 0; } while(0)
+#define rele_Toggle()             do { LATFbits.LATF2 = ~LATFbits.LATF2; } while(0)
+#define rele_GetValue()           PORTFbits.RF2
+#define rele_SetDigitalInput()    do { TRISFbits.TRISF2 = 1; } while(0)
+#define rele_SetDigitalOutput()   do { TRISFbits.TRISF2 = 0; } while(0)
+#define rele_SetPullup()          do { WPUFbits.WPUF2 = 1; } while(0)
+#define rele_ResetPullup()        do { WPUFbits.WPUF2 = 0; } while(0)
+#define rele_SetPushPull()        do { ODCONFbits.ODCF2 = 0; } while(0)
+#define rele_SetOpenDrain()       do { ODCONFbits.ODCF2 = 1; } while(0)
+#define rele_SetAnalogMode()      do { ANSELFbits.ANSELF2 = 1; } while(0)
+#define rele_SetDigitalMode()     do { ANSELFbits.ANSELF2 = 0; } while(0)
+
 // get/set LED0 aliases
 #define LED0_TRIS                 TRISFbits.TRISF3
 #define LED0_LAT                  LATFbits.LATF3
