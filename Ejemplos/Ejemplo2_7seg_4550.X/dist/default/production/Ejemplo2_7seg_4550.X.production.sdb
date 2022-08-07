@@ -3,6 +3,10 @@
 [d edition pro ]
 [d chip 18F4550 ]
 [d frameptr 4065 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
@@ -29,12 +33,14 @@
 [v ___omul __omul `(uo  1 e 8 0 ]
 "78 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo2_7seg_4550.X\Configuracion.c
 [v _ConfigClock ConfigClock `(v  1 e 1 0 ]
-"20 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo2_7seg_4550.X\main.c
+"22 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo2_7seg_4550.X\main.c
 [v _main main `(i  1 e 2 0 ]
 "2564 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18f4550.h
 [v _PORTC PORTC `VEuc  1 e 1 @3970 ]
 "3074
 [v _LATB LATB `VEuc  1 e 1 @3978 ]
+"3186
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
 "3264
 [v _LATD LATD `VEuc  1 e 1 @3980 ]
 "3626
@@ -68,10 +74,35 @@
 "16
 [v _decenas decenas `uc  1 e 1 0 ]
 [v _unidades unidades `uc  1 e 1 0 ]
-"20
+[v _Cuenta Cuenta `uc  1 e 1 0 ]
+"22
 [v _main main `(i  1 e 2 0 ]
 {
-"66
+"60
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 0 ]
+[v ___awmod@divisor divisor `i  1 p 2 2 ]
+"34
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 5 ]
+[v ___awdiv@counter counter `uc  1 a 1 4 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 0 ]
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+"41
 } 0
 "78 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo2_7seg_4550.X\Configuracion.c
 [v _ConfigClock ConfigClock `(v  1 e 1 0 ]

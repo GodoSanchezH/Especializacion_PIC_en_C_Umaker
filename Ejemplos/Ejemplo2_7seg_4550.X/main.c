@@ -13,9 +13,11 @@
 
 uint8_t Display_7Seg_A[10] = {0XC0,0XF9,0XA4,0XB0,0X99,0X92,0X82,0XF8,0X80,0X90};
 uint8_t i,j;
-uint8_t decenas=0,unidades=0;
+uint8_t decenas=0,unidades=0,Cuenta=0;
 
 void Ejemplo1(void);
+void Ejemplo2(void);
+void Ejemplo3(void);
 
 int main(int argc, char** argv) {
 
@@ -27,10 +29,40 @@ int main(int argc, char** argv) {
     
     //definimos los pulsadores
     TRISC |= (1<<0) | (1<<1);
-    
+    //definimos los habilitadores
+    TRISC &= ~(1<<6) & ~(1<<7);
+
     for(;;){
+        
+        unidades = Cuenta%10 ;
+        decenas =  Cuenta/10;
+        for(i=0;i<255;i++){
+        LATD  = Display_7Seg_A[unidades];
+      //habilitacion de unidades
+        
+        LATC &= ~(1<<7);
+        __delay_ms(1);
+        LATC |= (1<<7);
+        
+        LATD  = Display_7Seg_A[decenas];
+      //habilitacion de decenas
+        LATC &= ~(1<<6);
+        __delay_ms(1);
+        LATC |= (1<<6);
+        }
+        Cuenta++;
+        if (Cuenta == 100 ) Cuenta =0;
+
+        
+        }
     
-        if ((PORTC & (1<<0)) == 0) {
+    return (EXIT_SUCCESS);
+}
+void Ejemplo3(void){
+
+}
+void Ejemplo2(void){
+if ((PORTC & (1<<0)) == 0) {
             while((PORTC & (1<<0)) == 0);//bloqueo
             unidades++;
             if (unidades == 10) {
@@ -59,10 +91,6 @@ int main(int argc, char** argv) {
             LATD = Display_7Seg_A[unidades];
             LATB = Display_7Seg_A[decenas];
 
-
-        }
-    
-    return (EXIT_SUCCESS);
 }
 
 void Ejemplo1(void){
