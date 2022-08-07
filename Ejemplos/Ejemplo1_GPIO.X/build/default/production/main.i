@@ -28756,14 +28756,29 @@ unsigned char __t3rd16on(void);
 # 14 "./Configuracion.h"
 void Clock_Config(void);
 # 13 "main.c" 2
-
+# 31 "main.c"
+void Config_GPIO(void);
 
 
 
 int main(int argc, char** argv) {
 
     Clock_Config();
-# 49 "main.c"
+    Config_GPIO();
+
+    for(;;){
+
+
+        if (!(PORTB & (1<<4))) LATF |= (1<<3);
+        else LATF &= ~(1<<3);
+# 64 "main.c"
+    }
+
+    return (0);
+}
+
+void Config_GPIO(void) {
+# 98 "main.c"
     TRISF &= ~(1<<3);
     ANSELF &= ~(1<<3);
     WPUF &= ~(1<<3);
@@ -28780,16 +28795,4 @@ int main(int argc, char** argv) {
     ODCONB &= ~(1<<4);
     SLRCONB |= (1<<4);
 
-
-
-    for(;;){
-
-
-        if (!(PORTB & (1<<4))) LATF |= (1<<3);
-
-        else LATF &= ~(1<<3);
-# 97 "main.c"
-    }
-
-    return (0);
 }

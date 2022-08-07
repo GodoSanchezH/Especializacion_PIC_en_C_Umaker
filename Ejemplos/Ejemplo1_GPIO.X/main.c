@@ -12,12 +12,61 @@
 #include <pic18.h>
 #include "Configuracion.h"
 
+/*********************************************************************
+ * Function:        void Config_GPIO(void)
+ *
+ * PreCondition:    Tiene que ir al comienzo del programa   
+ *
+ * Input:           None
+ *
+ * Output:          None
+ *
+ * Side Effects:    None
+ *
+ * Overview:        None
+ *
+ * Note:            Se configura los perifericos nesesarios
+ ********************************************************************/
+
+void Config_GPIO(void);
+
 
 
 int main(int argc, char** argv) {
 
     Clock_Config();
+    Config_GPIO();
     
+    for(;;){
+    
+        
+        if (!(PORTB & (1<<4)))  LATF |= (1<<3);
+        else LATF &= ~(1<<3);
+
+//        LATF ^= (1<<3);
+//        __delay_ms(1000);
+        
+        
+
+//        LATF = 0x08;//
+//        __delay_ms(1000);
+//         LATF = 0x00;//
+//        __delay_ms(1000);
+/******************************************************************/
+        
+//        LATFbits.LATF3 = 0;
+//        __delay_ms(100);
+//        LATFbits.LATF3 = 1;
+//        __delay_ms(100);
+    
+    
+    
+    }
+    
+    return (EXIT_SUCCESS);
+}
+
+void Config_GPIO(void) {
 
 //    //Salida digital para RF3
 //    TRISF = 0x00; ///SALIDA DIGITAL
@@ -62,34 +111,6 @@ int main(int argc, char** argv) {
     ODCONB &= ~(1<<4);//PushPull
     SLRCONB |= (1<<4);//Limit Rate
     
-    
-    
-    for(;;){
-    
-        
-        if (!(PORTB & (1<<4)))  LATF |= (1<<3);
-        else LATF &= ~(1<<3);
-
-//        LATF ^= (1<<3);
-//        __delay_ms(1000);
-        
-        
-
-//        LATF = 0x08;//
-//        __delay_ms(1000);
-//         LATF = 0x00;//
-//        __delay_ms(1000);
-/******************************************************************/
-        
-//        LATFbits.LATF3 = 0;
-//        __delay_ms(100);
-//        LATFbits.LATF3 = 1;
-//        __delay_ms(100);
-    
-    
-    
-    }
-    
-    return (EXIT_SUCCESS);
 }
+       
 

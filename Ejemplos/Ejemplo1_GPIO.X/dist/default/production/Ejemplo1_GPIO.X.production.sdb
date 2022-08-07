@@ -29,8 +29,10 @@
 [v ___omul __omul `(uo  1 e 8 0 ]
 "65 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo1_GPIO.X\Configuracion.c
 [v _Clock_Config Clock_Config `(v  1 e 1 0 ]
-"17 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo1_GPIO.X\main.c
+"35 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo1_GPIO.X\main.c
 [v _main main `(i  1 e 2 0 ]
+"69
+[v _Config_GPIO Config_GPIO `(v  1 e 1 0 ]
 "5211 C:/Users/HP/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f57q43.h
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
 "5449
@@ -63,10 +65,15 @@
 [v _TRISF TRISF `VEuc  1 e 1 @1227 ]
 "48097
 [v _PORTB PORTB `VEuc  1 e 1 @1231 ]
-"17 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo1_GPIO.X\main.c
+"35 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo1_GPIO.X\main.c
 [v _main main `(i  1 e 2 0 ]
 {
-"100
+"67
+} 0
+"69
+[v _Config_GPIO Config_GPIO `(v  1 e 1 0 ]
+{
+"114
 } 0
 "65 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo1_GPIO.X\Configuracion.c
 [v _Clock_Config Clock_Config `(v  1 e 1 0 ]
