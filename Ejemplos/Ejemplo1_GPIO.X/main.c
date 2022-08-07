@@ -51,7 +51,7 @@ int main(int argc, char** argv) {
     WPUF &= ~(1<<3);//pull-up off
     INLVLF &= ~(1<<3);//TTL
     ODCONF &= ~(1<<3);//PushPull
-    SLRCONF |= (1<<3);//Limitado
+    SLRCONF |= (1<<3);//Limit Rate
     
     
     //entrada digital al pin rb4
@@ -60,7 +60,7 @@ int main(int argc, char** argv) {
     WPUB |= (1<<4);//pull-up ON
     INLVLB &= ~(1<<4);//TTL
     ODCONB &= ~(1<<4);//PushPull
-    SLRCONB |= (1<<4);//Limitado
+    SLRCONB |= (1<<4);//Limit Rate
     
     
     
@@ -68,19 +68,13 @@ int main(int argc, char** argv) {
     
         
         if (!(PORTB & (1<<4)))  LATF |= (1<<3);
-        
         else LATF &= ~(1<<3);
-        
 
-        
-        
-        
 //        LATF ^= (1<<3);
 //        __delay_ms(1000);
         
         
-        
-        
+
 //        LATF = 0x08;//
 //        __delay_ms(1000);
 //         LATF = 0x00;//
