@@ -1,0 +1,268 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F57Q43 ]
+[d frameptr 1249 ]
+"63 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo4_LCD_57Q73.X\LCD_PIC.c
+[e E16681 . `uc
+Fila1 0
+Fila2 1
+Fila3 2
+Fila4 3
+]
+"26 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo4_LCD_57Q73.X\Main.c
+[e E16999 . `uc
+Fila1 0
+Fila2 1
+Fila3 2
+Fila4 3
+]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"65 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo4_LCD_57Q73.X\Configuracion.c
+[v _Clock_Config Clock_Config `(v  1 e 1 0 ]
+"5 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo4_LCD_57Q73.X\LCD_PIC.c
+[v _LCD_PIC_DataBus LCD_PIC_DataBus `(v  1 e 1 0 ]
+"13
+[v _LCD_PIC_Cmd LCD_PIC_Cmd `(v  1 e 1 0 ]
+"21
+[v _LCD_PIC_Init LCD_PIC_Init `(v  1 e 1 0 ]
+"63
+[v _LCD_PIC_SetCursor LCD_PIC_SetCursor `(v  1 e 1 0 ]
+"104
+[v _LCD_PIC_Char LCD_PIC_Char `(v  1 e 1 0 ]
+"113
+[v _LCD_PIC_String LCD_PIC_String `(v  1 e 1 0 ]
+"132
+[v _LCD_PIC_New_Char LCD_PIC_New_Char `(v  1 e 1 0 ]
+"265
+[v _LCD_PIC_Write_New_Char LCD_PIC_Write_New_Char `(v  1 e 1 0 ]
+"17 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo4_LCD_57Q73.X\Main.c
+[v _main main `(i  1 e 2 0 ]
+"47
+[v _Config_GPIO Config_GPIO `(v  1 e 1 0 ]
+"5211 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q43.h
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
+"5449
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @177 ]
+"39613
+[v _ANSELB ANSELB `VEuc  1 e 1 @1032 ]
+"39675
+[v _WPUB WPUB `VEuc  1 e 1 @1033 ]
+"39737
+[v _ODCONB ODCONB `VEuc  1 e 1 @1034 ]
+"39799
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @1035 ]
+"39861
+[v _INLVLB INLVLB `VEuc  1 e 1 @1036 ]
+"40109
+[v _ANSELC ANSELC `VEuc  1 e 1 @1040 ]
+"40171
+[v _WPUC WPUC `VEuc  1 e 1 @1041 ]
+"40233
+[v _ODCONC ODCONC `VEuc  1 e 1 @1042 ]
+"40295
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @1043 ]
+"40357
+[v _INLVLC INLVLC `VEuc  1 e 1 @1044 ]
+"40605
+[v _ANSELD ANSELD `VEuc  1 e 1 @1048 ]
+"40667
+[v _WPUD WPUD `VEuc  1 e 1 @1049 ]
+"40729
+[v _ODCOND ODCOND `VEuc  1 e 1 @1050 ]
+"40791
+[v _SLRCOND SLRCOND `VEuc  1 e 1 @1051 ]
+"40853
+[v _INLVLD INLVLD `VEuc  1 e 1 @1052 ]
+"40915
+[v _ANSELE ANSELE `VEuc  1 e 1 @1056 ]
+"40947
+[v _WPUE WPUE `VEuc  1 e 1 @1057 ]
+"40985
+[v _ODCONE ODCONE `VEuc  1 e 1 @1058 ]
+"41017
+[v _SLRCONE SLRCONE `VEuc  1 e 1 @1059 ]
+"41049
+[v _INLVLE INLVLE `VEuc  1 e 1 @1060 ]
+"41150
+[v _ANSELF ANSELF `VEuc  1 e 1 @1064 ]
+"41212
+[v _WPUF WPUF `VEuc  1 e 1 @1065 ]
+"41274
+[v _ODCONF ODCONF `VEuc  1 e 1 @1066 ]
+"41336
+[v _SLRCONF SLRCONF `VEuc  1 e 1 @1067 ]
+"41398
+[v _INLVLF INLVLF `VEuc  1 e 1 @1068 ]
+[s S85 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"47654
+[u S94 . 1 `S85 1 . 1 0 ]
+"47654
+"47654
+[v _LATCbits LATCbits `VES94  1 e 1 @1216 ]
+[s S24 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"47716
+[u S33 . 1 `S24 1 . 1 0 ]
+"47716
+"47716
+[v _LATDbits LATDbits `VES33  1 e 1 @1217 ]
+[s S45 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
+]
+"47773
+[u S49 . 1 `S45 1 . 1 0 ]
+"47773
+"47773
+[v _LATEbits LATEbits `VES49  1 e 1 @1218 ]
+"47793
+[v _LATF LATF `VEuc  1 e 1 @1219 ]
+"47917
+[v _TRISB TRISB `VEuc  1 e 1 @1223 ]
+"47979
+[v _TRISC TRISC `VEuc  1 e 1 @1224 ]
+"48041
+[v _TRISD TRISD `VEuc  1 e 1 @1225 ]
+"48103
+[v _TRISE TRISE `VEuc  1 e 1 @1226 ]
+"48135
+[v _TRISF TRISF `VEuc  1 e 1 @1227 ]
+"17 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo4_LCD_57Q73.X\Main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"44
+} 0
+"265 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo4_LCD_57Q73.X\LCD_PIC.c
+[v _LCD_PIC_Write_New_Char LCD_PIC_Write_New_Char `(v  1 e 1 0 ]
+{
+[v LCD_PIC_Write_New_Char@a a `uc  1 a 1 wreg ]
+[v LCD_PIC_Write_New_Char@a a `uc  1 a 1 wreg ]
+[v LCD_PIC_Write_New_Char@a a `uc  1 a 1 3 ]
+"270
+} 0
+"113
+[v _LCD_PIC_String LCD_PIC_String `(v  1 e 1 0 ]
+{
+"114
+[v LCD_PIC_String@ptr ptr `*.32uc  1 a 2 8 ]
+"113
+[v LCD_PIC_String@a a `*.32uc  1 p 2 6 ]
+"118
+} 0
+"104
+[v _LCD_PIC_Char LCD_PIC_Char `(v  1 e 1 0 ]
+{
+[v LCD_PIC_Char@c c `uc  1 a 1 wreg ]
+"105
+[v LCD_PIC_Char@n n `uc  1 a 1 4 ]
+[v LCD_PIC_Char@m m `uc  1 a 1 3 ]
+"104
+[v LCD_PIC_Char@c c `uc  1 a 1 wreg ]
+"106
+[v LCD_PIC_Char@c c `uc  1 a 1 5 ]
+"111
+} 0
+"63
+[v _LCD_PIC_SetCursor LCD_PIC_SetCursor `(v  1 e 1 0 ]
+{
+[v LCD_PIC_SetCursor@x x `uc  1 a 1 wreg ]
+"65
+[v LCD_PIC_SetCursor@n n `uc  1 a 1 8 ]
+[v LCD_PIC_SetCursor@m m `uc  1 a 1 7 ]
+"63
+[v LCD_PIC_SetCursor@x x `uc  1 a 1 wreg ]
+[v LCD_PIC_SetCursor@y y `E16681  1 p 1 3 ]
+[v LCD_PIC_SetCursor@x x `uc  1 a 1 9 ]
+"102
+} 0
+"132
+[v _LCD_PIC_New_Char LCD_PIC_New_Char `(v  1 e 1 0 ]
+{
+[v LCD_PIC_New_Char@a a `uc  1 a 1 wreg ]
+"133
+[v LCD_PIC_New_Char@n n `uc  1 a 1 15 ]
+[v LCD_PIC_New_Char@m m `uc  1 a 1 14 ]
+"132
+[v LCD_PIC_New_Char@a a `uc  1 a 1 wreg ]
+[v LCD_PIC_New_Char@b b `uc  1 p 1 3 ]
+[v LCD_PIC_New_Char@c c `uc  1 p 1 4 ]
+[v LCD_PIC_New_Char@d d `uc  1 p 1 5 ]
+[v LCD_PIC_New_Char@e e `uc  1 p 1 6 ]
+[v LCD_PIC_New_Char@f f `uc  1 p 1 7 ]
+[v LCD_PIC_New_Char@g g `uc  1 p 1 8 ]
+[v LCD_PIC_New_Char@h h `uc  1 p 1 9 ]
+[v LCD_PIC_New_Char@i i `uc  1 p 1 10 ]
+[v LCD_PIC_New_Char@a a `uc  1 a 1 13 ]
+"263
+} 0
+"21
+[v _LCD_PIC_Init LCD_PIC_Init `(v  1 e 1 0 ]
+{
+"60
+} 0
+"13
+[v _LCD_PIC_Cmd LCD_PIC_Cmd `(v  1 e 1 0 ]
+{
+[v LCD_PIC_Cmd@a a `uc  1 a 1 wreg ]
+[v LCD_PIC_Cmd@a a `uc  1 a 1 wreg ]
+[v LCD_PIC_Cmd@a a `uc  1 a 1 2 ]
+"19
+} 0
+"5
+[v _LCD_PIC_DataBus LCD_PIC_DataBus `(v  1 e 1 0 ]
+{
+[v LCD_PIC_DataBus@a a `uc  1 a 1 wreg ]
+[v LCD_PIC_DataBus@a a `uc  1 a 1 wreg ]
+"8
+[v LCD_PIC_DataBus@a a `uc  1 a 1 0 ]
+"12
+} 0
+"47 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo4_LCD_57Q73.X\Main.c
+[v _Config_GPIO Config_GPIO `(v  1 e 1 0 ]
+{
+"67
+} 0
+"65 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo4_LCD_57Q73.X\Configuracion.c
+[v _Clock_Config Clock_Config `(v  1 e 1 0 ]
+{
+"69
+} 0

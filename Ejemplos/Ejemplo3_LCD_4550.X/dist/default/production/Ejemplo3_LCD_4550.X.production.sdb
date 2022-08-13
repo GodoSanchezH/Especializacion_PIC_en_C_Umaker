@@ -1,0 +1,214 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"34 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo3_LCD_4550.X\Main.c
+[e E506 . `uc
+Fila1 0
+Fila2 1
+Fila3 2
+Fila4 3
+]
+"41 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo3_LCD_4550.X\LCD_PIC.c
+[e E3193 . `uc
+Fila1 0
+Fila2 1
+Fila3 2
+Fila4 3
+]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"78 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo3_LCD_4550.X\Configuracion.c
+[v _ConfigClock ConfigClock `(v  1 e 1 0 ]
+"5 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo3_LCD_4550.X\LCD_PIC.c
+[v _LCD_PIC_DataBus LCD_PIC_DataBus `(v  1 e 1 0 ]
+"13
+[v _LCD_PIC_Cmd LCD_PIC_Cmd `(v  1 e 1 0 ]
+"21
+[v _LCD_PIC_Init LCD_PIC_Init `(v  1 e 1 0 ]
+"41
+[v _LCD_PIC_SetCursor LCD_PIC_SetCursor `(v  1 e 1 0 ]
+"82
+[v _LCD_PIC_Char LCD_PIC_Char `(v  1 e 1 0 ]
+"91
+[v _LCD_PIC_String LCD_PIC_String `(v  1 e 1 0 ]
+"98
+[v _LCD_PIC_Clear LCD_PIC_Clear `(v  1 e 1 0 ]
+"104
+[v _LCD_PIC_Home LCD_PIC_Home `(v  1 e 1 0 ]
+"110
+[v _LCD_PIC_New_Char LCD_PIC_New_Char `(v  1 e 1 0 ]
+"243
+[v _LCD_PIC_Write_New_Char LCD_PIC_Write_New_Char `(v  1 e 1 0 ]
+"26 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo3_LCD_4550.X\Main.c
+[v _main main `(i  1 e 2 0 ]
+"3264 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\proc\pic18f4550.h
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+[s S131 . 1 `uc 1 LATD0 1 0 :1:0 
+`uc 1 LATD1 1 0 :1:1 
+`uc 1 LATD2 1 0 :1:2 
+`uc 1 LATD3 1 0 :1:3 
+`uc 1 LATD4 1 0 :1:4 
+`uc 1 LATD5 1 0 :1:5 
+`uc 1 LATD6 1 0 :1:6 
+`uc 1 LATD7 1 0 :1:7 
+]
+"3291
+[s S140 . 1 `uc 1 LD0 1 0 :1:0 
+`uc 1 LD1 1 0 :1:1 
+`uc 1 LD2 1 0 :1:2 
+`uc 1 LD3 1 0 :1:3 
+`uc 1 LD4 1 0 :1:4 
+`uc 1 LD5 1 0 :1:5 
+`uc 1 LD6 1 0 :1:6 
+`uc 1 LD7 1 0 :1:7 
+]
+[u S149 . 1 `S131 1 . 1 0 `S140 1 . 1 0 ]
+[v _LATDbits LATDbits `VES149  1 e 1 @3980 ]
+"4002
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S24 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 IOFS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"8010
+[s S30 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 FLTS 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S38 . 1 `S24 1 . 1 0 `S30 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES38  1 e 1 @4051 ]
+"26 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo3_LCD_4550.X\Main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"64
+} 0
+"243 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo3_LCD_4550.X\LCD_PIC.c
+[v _LCD_PIC_Write_New_Char LCD_PIC_Write_New_Char `(v  1 e 1 0 ]
+{
+[v LCD_PIC_Write_New_Char@a a `uc  1 a 1 wreg ]
+[v LCD_PIC_Write_New_Char@a a `uc  1 a 1 wreg ]
+[v LCD_PIC_Write_New_Char@a a `uc  1 a 1 3 ]
+"248
+} 0
+"91
+[v _LCD_PIC_String LCD_PIC_String `(v  1 e 1 0 ]
+{
+"92
+[v LCD_PIC_String@ptr ptr `*.25uc  1 a 2 8 ]
+"91
+[v LCD_PIC_String@a a `*.25uc  1 p 2 6 ]
+"96
+} 0
+"82
+[v _LCD_PIC_Char LCD_PIC_Char `(v  1 e 1 0 ]
+{
+[v LCD_PIC_Char@c c `uc  1 a 1 wreg ]
+"83
+[v LCD_PIC_Char@n n `uc  1 a 1 4 ]
+[v LCD_PIC_Char@m m `uc  1 a 1 3 ]
+"82
+[v LCD_PIC_Char@c c `uc  1 a 1 wreg ]
+"84
+[v LCD_PIC_Char@c c `uc  1 a 1 5 ]
+"89
+} 0
+"41
+[v _LCD_PIC_SetCursor LCD_PIC_SetCursor `(v  1 e 1 0 ]
+{
+[v LCD_PIC_SetCursor@x x `uc  1 a 1 wreg ]
+"43
+[v LCD_PIC_SetCursor@n n `uc  1 a 1 8 ]
+[v LCD_PIC_SetCursor@m m `uc  1 a 1 7 ]
+"41
+[v LCD_PIC_SetCursor@x x `uc  1 a 1 wreg ]
+[v LCD_PIC_SetCursor@y y `E3193  1 p 1 3 ]
+[v LCD_PIC_SetCursor@x x `uc  1 a 1 9 ]
+"80
+} 0
+"110
+[v _LCD_PIC_New_Char LCD_PIC_New_Char `(v  1 e 1 0 ]
+{
+[v LCD_PIC_New_Char@a a `uc  1 a 1 wreg ]
+"111
+[v LCD_PIC_New_Char@n n `uc  1 a 1 15 ]
+[v LCD_PIC_New_Char@m m `uc  1 a 1 14 ]
+"110
+[v LCD_PIC_New_Char@a a `uc  1 a 1 wreg ]
+[v LCD_PIC_New_Char@b b `uc  1 p 1 3 ]
+[v LCD_PIC_New_Char@c c `uc  1 p 1 4 ]
+[v LCD_PIC_New_Char@d d `uc  1 p 1 5 ]
+[v LCD_PIC_New_Char@e e `uc  1 p 1 6 ]
+[v LCD_PIC_New_Char@f f `uc  1 p 1 7 ]
+[v LCD_PIC_New_Char@g g `uc  1 p 1 8 ]
+[v LCD_PIC_New_Char@h h `uc  1 p 1 9 ]
+[v LCD_PIC_New_Char@i i `uc  1 p 1 10 ]
+[v LCD_PIC_New_Char@a a `uc  1 a 1 13 ]
+"241
+} 0
+"21
+[v _LCD_PIC_Init LCD_PIC_Init `(v  1 e 1 0 ]
+{
+"38
+} 0
+"104
+[v _LCD_PIC_Home LCD_PIC_Home `(v  1 e 1 0 ]
+{
+"108
+} 0
+"98
+[v _LCD_PIC_Clear LCD_PIC_Clear `(v  1 e 1 0 ]
+{
+"102
+} 0
+"13
+[v _LCD_PIC_Cmd LCD_PIC_Cmd `(v  1 e 1 0 ]
+{
+[v LCD_PIC_Cmd@a a `uc  1 a 1 wreg ]
+[v LCD_PIC_Cmd@a a `uc  1 a 1 wreg ]
+[v LCD_PIC_Cmd@a a `uc  1 a 1 2 ]
+"19
+} 0
+"5
+[v _LCD_PIC_DataBus LCD_PIC_DataBus `(v  1 e 1 0 ]
+{
+[v LCD_PIC_DataBus@a a `uc  1 a 1 wreg ]
+[v LCD_PIC_DataBus@a a `uc  1 a 1 wreg ]
+"8
+[v LCD_PIC_DataBus@a a `uc  1 a 1 0 ]
+"12
+} 0
+"78 C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo3_LCD_4550.X\Configuracion.c
+[v _ConfigClock ConfigClock `(v  1 e 1 0 ]
+{
+"81
+} 0

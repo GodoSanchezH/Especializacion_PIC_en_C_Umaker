@@ -1,0 +1,154 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"13 ./Configuracion.h
+[; ;./Configuracion.h: 13: void ConfigClock(void);
+[v _ConfigClock `(v ~T0 @X0 0 ef ]
+"32 ./LCD_PIC.h
+[; ;./LCD_PIC.h: 32: void LCD_PIC_Init(void);
+[v _LCD_PIC_Init `(v ~T0 @X0 0 ef ]
+"39
+[; ;./LCD_PIC.h: 39: void LCD_PIC_New_Char(uint8_t a,uint8_t b,uint8_t c,uint8_t d,uint8_t e,uint8_t f,uint8_t g,uint8_t h,uint8_t i);
+[v _LCD_PIC_New_Char `(v ~T0 @X0 0 ef9`uc`uc`uc`uc`uc`uc`uc`uc`uc ]
+"34 Main.c
+[; ;Main.c: 34:     LCD_PIC_SetCursor(0,Fila1);
+[c E506 0 1 2 3 .. ]
+[n E506 . Fila1 Fila2 Fila3 Fila4  ]
+"33 ./LCD_PIC.h
+[; ;./LCD_PIC.h: 33: void LCD_PIC_SetCursor(uint8_t x,Ubicacion y);
+[v _LCD_PIC_SetCursor `(v ~T0 @X0 0 ef2`uc`E506 ]
+"35
+[; ;./LCD_PIC.h: 35: void LCD_PIC_String(char *a);
+[v _LCD_PIC_String `(v ~T0 @X0 0 ef1`*uc ]
+[v F497 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18Fxxxx_DFP/1.3.36/xc8\pic\include\builtins.h
+[v __delay `JF497 ~T0 @X0 0 e ]
+[p i __delay ]
+"36 ./LCD_PIC.h
+[; ;./LCD_PIC.h: 36: void LCD_PIC_Clear(void);
+[v _LCD_PIC_Clear `(v ~T0 @X0 0 ef ]
+"37
+[; ;./LCD_PIC.h: 37: void LCD_PIC_Home(void);
+[v _LCD_PIC_Home `(v ~T0 @X0 0 ef ]
+"38
+[; ;./LCD_PIC.h: 38: void LCD_PIC_Write_New_Char(uint8_t a);
+[v _LCD_PIC_Write_New_Char `(v ~T0 @X0 0 ef1`uc ]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"26 Main.c
+[; ;Main.c: 26: int main(int argc, char** argv) {
+[v _main `(i ~T0 @X0 1 ef2`i`**uc ]
+{
+[e :U _main ]
+[v _argc `i ~T0 @X0 1 r1 ]
+[v _argv `**uc ~T0 @X0 1 r2 ]
+[f ]
+"28
+[; ;Main.c: 28:     ConfigClock();
+[e ( _ConfigClock ..  ]
+"29
+[; ;Main.c: 29:     LCD_PIC_Init();
+[e ( _LCD_PIC_Init ..  ]
+"31
+[; ;Main.c: 31:     LCD_PIC_New_Char(1,0x0A,0x1F,0x1F,0x1F,0x0E,0x04,0x00,0X00);
+[e ( _LCD_PIC_New_Char (4 , , , , , , , , -> -> 1 `i `uc -> -> 10 `i `uc -> -> 31 `i `uc -> -> 31 `i `uc -> -> 31 `i `uc -> -> 14 `i `uc -> -> 4 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"32
+[; ;Main.c: 32:     LCD_PIC_New_Char(2,0x0E,0x1F,0x15,0x1F,0x0E,0x0E,0x00,0x00);
+[e ( _LCD_PIC_New_Char (4 , , , , , , , , -> -> 2 `i `uc -> -> 14 `i `uc -> -> 31 `i `uc -> -> 21 `i `uc -> -> 31 `i `uc -> -> 14 `i `uc -> -> 14 `i `uc -> -> 0 `i `uc -> -> 0 `i `uc ]
+"33
+[; ;Main.c: 33:     LCD_PIC_New_Char(3,0x03,0x07,0x09,0x09,0x09,0x1B,0x1B,0x00);
+[e ( _LCD_PIC_New_Char (4 , , , , , , , , -> -> 3 `i `uc -> -> 3 `i `uc -> -> 7 `i `uc -> -> 9 `i `uc -> -> 9 `i `uc -> -> 9 `i `uc -> -> 27 `i `uc -> -> 27 `i `uc -> -> 0 `i `uc ]
+"34
+[; ;Main.c: 34:     LCD_PIC_SetCursor(0,Fila1);
+[e ( _LCD_PIC_SetCursor (2 , -> -> 0 `i `uc . `E506 0 ]
+"35
+[; ;Main.c: 35:     LCD_PIC_String("Bienvenidos :3");
+[e ( _LCD_PIC_String (1 :s 1C ]
+"36
+[; ;Main.c: 36:     LCD_PIC_SetCursor(0,Fila2);
+[e ( _LCD_PIC_SetCursor (2 , -> -> 0 `i `uc . `E506 1 ]
+"37
+[; ;Main.c: 37:     LCD_PIC_String("Al Curso de");
+[e ( _LCD_PIC_String (1 :s 2C ]
+"38
+[; ;Main.c: 38:     LCD_PIC_SetCursor(0,Fila3);
+[e ( _LCD_PIC_SetCursor (2 , -> -> 0 `i `uc . `E506 2 ]
+"39
+[; ;Main.c: 39:     LCD_PIC_String("PIC en C");
+[e ( _LCD_PIC_String (1 :s 3C ]
+"40
+[; ;Main.c: 40:     LCD_PIC_SetCursor(0,Fila4);
+[e ( _LCD_PIC_SetCursor (2 , -> -> 0 `i `uc . `E506 3 ]
+"41
+[; ;Main.c: 41:     LCD_PIC_String("Umaker");
+[e ( _LCD_PIC_String (1 :s 4C ]
+"42
+[; ;Main.c: 42:     _delay((unsigned long)((1000)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"43
+[; ;Main.c: 43:     _delay((unsigned long)((1000)*(8000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 8000000 `ul `d .4000.0 `ul ]
+"44
+[; ;Main.c: 44:     LCD_PIC_Clear();
+[e ( _LCD_PIC_Clear ..  ]
+"45
+[; ;Main.c: 45:     LCD_PIC_Home();
+[e ( _LCD_PIC_Home ..  ]
+"46
+[; ;Main.c: 46:     LCD_PIC_SetCursor(0,Fila1);
+[e ( _LCD_PIC_SetCursor (2 , -> -> 0 `i `uc . `E506 0 ]
+"47
+[; ;Main.c: 47:     LCD_PIC_String("Bienvenidos :3");
+[e ( _LCD_PIC_String (1 :s 5C ]
+"48
+[; ;Main.c: 48:     LCD_PIC_SetCursor(0,Fila2);
+[e ( _LCD_PIC_SetCursor (2 , -> -> 0 `i `uc . `E506 1 ]
+"49
+[; ;Main.c: 49:     LCD_PIC_String("PIC18F57Q43");
+[e ( _LCD_PIC_String (1 :s 6C ]
+"50
+[; ;Main.c: 50:     LCD_PIC_Write_New_Char(1);
+[e ( _LCD_PIC_Write_New_Char (1 -> -> 1 `i `uc ]
+"51
+[; ;Main.c: 51:     LCD_PIC_SetCursor(0,Fila3);
+[e ( _LCD_PIC_SetCursor (2 , -> -> 0 `i `uc . `E506 2 ]
+"52
+[; ;Main.c: 52:     LCD_PIC_String("PIC en Assembler");
+[e ( _LCD_PIC_String (1 :s 7C ]
+"53
+[; ;Main.c: 53:     LCD_PIC_Write_New_Char(2);
+[e ( _LCD_PIC_Write_New_Char (1 -> -> 2 `i `uc ]
+"54
+[; ;Main.c: 54:     LCD_PIC_SetCursor(0,Fila4);
+[e ( _LCD_PIC_SetCursor (2 , -> -> 0 `i `uc . `E506 3 ]
+"55
+[; ;Main.c: 55:     LCD_PIC_String("Peru-Umaker ");
+[e ( _LCD_PIC_String (1 :s 8C ]
+"56
+[; ;Main.c: 56:     LCD_PIC_Write_New_Char(3);
+[e ( _LCD_PIC_Write_New_Char (1 -> -> 3 `i `uc ]
+"57
+[; ;Main.c: 57:     for(;;){
+{
+[e :U 9 ]
+{
+"60
+[; ;Main.c: 60:     }
+}
+[e $U 9  ]
+[e :U 10 ]
+}
+"63
+[; ;Main.c: 63:     return (0);
+[e ) -> 0 `i ]
+[e $UE 8  ]
+"64
+[; ;Main.c: 64: }
+[e :UE 8 ]
+}
+[a 7C 80 73 67 32 101 110 32 65 115 115 101 109 98 108 101 114 0 ]
+[a 4C 85 109 97 107 101 114 0 ]
+[a 2C 65 108 32 67 117 114 115 111 32 100 101 0 ]
+[a 3C 80 73 67 32 101 110 32 67 0 ]
+[a 1C 66 105 101 110 118 101 110 105 100 111 115 32 58 51 0 ]
+[a 5C 66 105 101 110 118 101 110 105 100 111 115 32 58 51 0 ]
+[a 6C 80 73 67 49 56 70 53 55 81 52 51 0 ]
+[a 8C 80 101 114 117 45 85 109 97 107 101 114 32 0 ]
