@@ -1,0 +1,276 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F57Q43 ]
+[d frameptr 1249 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"65 C:\Users\HP\MPLABXProjects\Ejemplo5_Interrupt.X\Configuracion.c
+[v _Clock_Config Clock_Config `(v  1 e 1 0 ]
+"7 C:\Users\HP\MPLABXProjects\Ejemplo5_Interrupt.X\Interrupt.c
+[v _Interrupt_Config Interrupt_Config `(v  1 e 1 0 ]
+"63
+[v _INT0_ISR INT0_ISR `IIH(v  1 e 1 0 ]
+"81
+[v _IOC_ISR IOC_ISR `IIL(v  1 e 1 0 ]
+"26 C:\Users\HP\MPLABXProjects\Ejemplo5_Interrupt.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"43
+[v _Config_GPIO Config_GPIO `(v  1 e 1 0 ]
+"5211 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f57q43.h
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
+"5449
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @177 ]
+[s S108 . 1 `uc 1 INT0IP 1 0 :1:0 
+`uc 1 ZCDIP 1 0 :1:1 
+`uc 1 ADIP 1 0 :1:2 
+`uc 1 ACTIP 1 0 :1:3 
+`uc 1 C1IP 1 0 :1:4 
+`uc 1 SMT1IP 1 0 :1:5 
+`uc 1 SMT1PRAIP 1 0 :1:6 
+`uc 1 SMT1PWAIP 1 0 :1:7 
+]
+"31034
+[u S117 . 1 `S108 1 . 1 0 ]
+[v _IPR1bits IPR1bits `VES117  1 e 1 @867 ]
+[s S171 . 1 `uc 1 INT1IP 1 0 :1:0 
+`uc 1 CLC2IP 1 0 :1:1 
+`uc 1 CWG1IP 1 0 :1:2 
+`uc 1 NCO1IP 1 0 :1:3 
+`uc 1 DMA2SCNTIP 1 0 :1:4 
+`uc 1 DMA2DCNTIP 1 0 :1:5 
+`uc 1 DMA2ORIP 1 0 :1:6 
+`uc 1 DMA2AIP 1 0 :1:7 
+]
+"31311
+[u S180 . 1 `S171 1 . 1 0 ]
+[v _IPR6bits IPR6bits `VES180  1 e 1 @872 ]
+"39451
+[v _ANSELB ANSELB `VEuc  1 e 1 @1032 ]
+"39513
+[v _WPUB WPUB `VEuc  1 e 1 @1033 ]
+"39575
+[v _ODCONB ODCONB `VEuc  1 e 1 @1034 ]
+"39637
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @1035 ]
+"39699
+[v _INLVLB INLVLB `VEuc  1 e 1 @1036 ]
+[s S281 . 1 `uc 1 IOCBP0 1 0 :1:0 
+`uc 1 IOCBP1 1 0 :1:1 
+`uc 1 IOCBP2 1 0 :1:2 
+`uc 1 IOCBP3 1 0 :1:3 
+`uc 1 IOCBP4 1 0 :1:4 
+`uc 1 IOCBP5 1 0 :1:5 
+`uc 1 IOCBP6 1 0 :1:6 
+`uc 1 IOCBP7 1 0 :1:7 
+]
+"39778
+[u S290 . 1 `S281 1 . 1 0 ]
+"39778
+"39778
+[v _IOCBPbits IOCBPbits `VES290  1 e 1 @1037 ]
+[s S260 . 1 `uc 1 IOCBN0 1 0 :1:0 
+`uc 1 IOCBN1 1 0 :1:1 
+`uc 1 IOCBN2 1 0 :1:2 
+`uc 1 IOCBN3 1 0 :1:3 
+`uc 1 IOCBN4 1 0 :1:4 
+`uc 1 IOCBN5 1 0 :1:5 
+`uc 1 IOCBN6 1 0 :1:6 
+`uc 1 IOCBN7 1 0 :1:7 
+]
+"39840
+[u S269 . 1 `S260 1 . 1 0 ]
+"39840
+"39840
+[v _IOCBNbits IOCBNbits `VES269  1 e 1 @1038 ]
+[s S302 . 1 `uc 1 IOCBF0 1 0 :1:0 
+`uc 1 IOCBF1 1 0 :1:1 
+`uc 1 IOCBF2 1 0 :1:2 
+`uc 1 IOCBF3 1 0 :1:3 
+`uc 1 IOCBF4 1 0 :1:4 
+`uc 1 IOCBF5 1 0 :1:5 
+`uc 1 IOCBF6 1 0 :1:6 
+`uc 1 IOCBF7 1 0 :1:7 
+]
+"39902
+[u S311 . 1 `S302 1 . 1 0 ]
+"39902
+"39902
+[v _IOCBFbits IOCBFbits `VES311  1 e 1 @1039 ]
+"40988
+[v _ANSELF ANSELF `VEuc  1 e 1 @1064 ]
+"41050
+[v _WPUF WPUF `VEuc  1 e 1 @1065 ]
+"41112
+[v _ODCONF ODCONF `VEuc  1 e 1 @1066 ]
+"41174
+[v _SLRCONF SLRCONF `VEuc  1 e 1 @1067 ]
+"41236
+[v _INLVLF INLVLF `VEuc  1 e 1 @1068 ]
+"44198
+[v _IVTBASEL IVTBASEL `VEuc  1 e 1 @1117 ]
+"44260
+[v _IVTBASEH IVTBASEH `VEuc  1 e 1 @1118 ]
+"44322
+[v _IVTBASEU IVTBASEU `VEuc  1 e 1 @1119 ]
+[s S218 . 1 `uc 1 SWIE 1 0 :1:0 
+`uc 1 HLVDIE 1 0 :1:1 
+`uc 1 OSFIE 1 0 :1:2 
+`uc 1 CSWIE 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CLC1IE 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 IOCIE 1 0 :1:7 
+]
+"45620
+[u S227 . 1 `S218 1 . 1 0 ]
+"45620
+"45620
+[v _PIE0bits PIE0bits `VES227  1 e 1 @1182 ]
+[s S66 . 1 `uc 1 INT0IE 1 0 :1:0 
+`uc 1 ZCDIE 1 0 :1:1 
+`uc 1 ADIE 1 0 :1:2 
+`uc 1 ACTIE 1 0 :1:3 
+`uc 1 C1IE 1 0 :1:4 
+`uc 1 SMT1IE 1 0 :1:5 
+`uc 1 SMT1PRAIE 1 0 :1:6 
+`uc 1 SMT1PWAIE 1 0 :1:7 
+]
+"45672
+[u S75 . 1 `S66 1 . 1 0 ]
+"45672
+"45672
+[v _PIE1bits PIE1bits `VES75  1 e 1 @1183 ]
+[s S129 . 1 `uc 1 INT1IE 1 0 :1:0 
+`uc 1 CLC2IE 1 0 :1:1 
+`uc 1 CWG1IE 1 0 :1:2 
+`uc 1 NCO1IE 1 0 :1:3 
+`uc 1 DMA2SCNTIE 1 0 :1:4 
+`uc 1 DMA2DCNTIE 1 0 :1:5 
+`uc 1 DMA2ORIE 1 0 :1:6 
+`uc 1 DMA2AIE 1 0 :1:7 
+]
+"45949
+[u S138 . 1 `S129 1 . 1 0 ]
+"45949
+"45949
+[v _PIE6bits PIE6bits `VES138  1 e 1 @1188 ]
+[s S239 . 1 `uc 1 SWIF 1 0 :1:0 
+`uc 1 HLVDIF 1 0 :1:1 
+`uc 1 OSFIF 1 0 :1:2 
+`uc 1 CSWIF 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 CLC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 IOCIF 1 0 :1:7 
+]
+"46494
+[u S248 . 1 `S239 1 . 1 0 ]
+"46494
+"46494
+[v _PIR0bits PIR0bits `VES248  1 e 1 @1198 ]
+[s S87 . 1 `uc 1 INT0IF 1 0 :1:0 
+`uc 1 ZCDIF 1 0 :1:1 
+`uc 1 ADIF 1 0 :1:2 
+`uc 1 ACTIF 1 0 :1:3 
+`uc 1 C1IF 1 0 :1:4 
+`uc 1 SMT1IF 1 0 :1:5 
+`uc 1 SMT1PRAIF 1 0 :1:6 
+`uc 1 SMT1PWAIF 1 0 :1:7 
+]
+"46546
+[u S96 . 1 `S87 1 . 1 0 ]
+"46546
+"46546
+[v _PIR1bits PIR1bits `VES96  1 e 1 @1199 ]
+[s S150 . 1 `uc 1 INT1IF 1 0 :1:0 
+`uc 1 CLC2IF 1 0 :1:1 
+`uc 1 CWG1IF 1 0 :1:2 
+`uc 1 NCO1IF 1 0 :1:3 
+`uc 1 DMA2SCNTIF 1 0 :1:4 
+`uc 1 DMA2DCNTIF 1 0 :1:5 
+`uc 1 DMA2ORIF 1 0 :1:6 
+`uc 1 DMA2AIF 1 0 :1:7 
+]
+"46823
+[u S159 . 1 `S150 1 . 1 0 ]
+"46823
+"46823
+[v _PIR6bits PIR6bits `VES159  1 e 1 @1204 ]
+"47631
+[v _LATF LATF `VEuc  1 e 1 @1219 ]
+"47755
+[v _TRISB TRISB `VEuc  1 e 1 @1223 ]
+"47973
+[v _TRISF TRISF `VEuc  1 e 1 @1227 ]
+[s S192 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"48403
+[s S200 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 GIEH 1 0 :1:7 
+]
+"48403
+[u S203 . 1 `S192 1 . 1 0 `S200 1 . 1 0 ]
+"48403
+"48403
+[v _INTCON0bits INTCON0bits `VES203  1 e 1 @1238 ]
+"18 C:\Users\HP\MPLABXProjects\Ejemplo5_Interrupt.X\main.c
+[v _Flag Flag `VEa  1 e 1 0 ]
+"26
+[v _main main `(i  1 e 2 0 ]
+{
+"42
+} 0
+"7 C:\Users\HP\MPLABXProjects\Ejemplo5_Interrupt.X\Interrupt.c
+[v _Interrupt_Config Interrupt_Config `(v  1 e 1 0 ]
+{
+"60
+} 0
+"43 C:\Users\HP\MPLABXProjects\Ejemplo5_Interrupt.X\main.c
+[v _Config_GPIO Config_GPIO `(v  1 e 1 0 ]
+{
+"75
+} 0
+"65 C:\Users\HP\MPLABXProjects\Ejemplo5_Interrupt.X\Configuracion.c
+[v _Clock_Config Clock_Config `(v  1 e 1 0 ]
+{
+"69
+} 0
+"81 C:\Users\HP\MPLABXProjects\Ejemplo5_Interrupt.X\Interrupt.c
+[v _IOC_ISR IOC_ISR `IIL(v  1 e 1 0 ]
+{
+"89
+} 0
+"63
+[v _INT0_ISR INT0_ISR `IIH(v  1 e 1 0 ]
+{
+"79
+} 0
