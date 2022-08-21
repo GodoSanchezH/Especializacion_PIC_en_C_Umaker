@@ -1,0 +1,219 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F57Q43 ]
+[d frameptr 1249 ]
+"6 C:\Users\HP\MPLABXProjects/Ejemplo7_Timer0.X/Timer0.c
+[e E2 . `uc
+M_8bit 0
+M_16bit 1
+]
+"23 C:\Users\HP\MPLABXProjects\Ejemplo7_Timer_0.X\main.c
+[e E16939 . `uc
+M_8bit 0
+M_16bit 1
+]
+"64 C:\Users\HP\MPLABXProjects/Ejemplo7_Timer0.X/Configuracion.c
+[v _Clock_Config Clock_Config `(v  1 e 1 0 ]
+"7 C:\Users\HP\MPLABXProjects/Ejemplo7_Timer0.X/Interrupt.c
+[v _Interrupt_Config Interrupt_Config `(v  1 e 1 0 ]
+"33
+[v _RutinaHP_ISR RutinaHP_ISR `IIH(v  1 e 1 0 ]
+"41
+[v _RutinaLP_ISR RutinaLP_ISR `IIL(v  1 e 1 0 ]
+"6 C:\Users\HP\MPLABXProjects/Ejemplo7_Timer0.X/Timer0.c
+[v _TimerInit TimerInit `(v  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"18 C:\Users\HP\MPLABXProjects\Ejemplo7_Timer_0.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"5211 C:/Users/HP/.mchp_packs/Microchip/PIC18F-Q_DFP/1.11.185/xc8\pic\include\proc\pic18f57q43.h
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
+"5449
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @177 ]
+"23299
+[v _TMR0L TMR0L `VEuc  1 e 1 @792 ]
+"23437
+[v _TMR0H TMR0H `VEuc  1 e 1 @793 ]
+[s S169 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 MD16 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"23719
+[s S175 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T0MD16 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+[s S181 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 T016BIT 1 0 :1:4 
+]
+[u S187 . 1 `S169 1 . 1 0 `S175 1 . 1 0 `S181 1 . 1 0 ]
+[v _T0CON0bits T0CON0bits `VES187  1 e 1 @794 ]
+[s S210 . 1 `uc 1 CKPS 1 0 :4:0 
+`uc 1 ASYNC 1 0 :1:4 
+`uc 1 CS 1 0 :3:5 
+]
+"23826
+[s S214 . 1 `uc 1 CKPS0 1 0 :1:0 
+`uc 1 CKPS1 1 0 :1:1 
+`uc 1 CKPS2 1 0 :1:2 
+`uc 1 CKPS3 1 0 :1:3 
+`uc 1 T0ASYNC 1 0 :1:4 
+`uc 1 CS0 1 0 :1:5 
+`uc 1 CS1 1 0 :1:6 
+`uc 1 CS2 1 0 :1:7 
+]
+[s S223 . 1 `uc 1 T0CKPS 1 0 :4:0 
+`uc 1 . 1 0 :1:4 
+`uc 1 T0CS 1 0 :3:5 
+]
+[s S227 . 1 `uc 1 T0CKPS0 1 0 :1:0 
+`uc 1 T0CKPS1 1 0 :1:1 
+`uc 1 T0CKPS2 1 0 :1:2 
+`uc 1 T0CKPS3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 T0CS0 1 0 :1:5 
+`uc 1 T0CS1 1 0 :1:6 
+`uc 1 T0CS2 1 0 :1:7 
+]
+[u S236 . 1 `S210 1 . 1 0 `S214 1 . 1 0 `S223 1 . 1 0 `S227 1 . 1 0 ]
+[v _T0CON1bits T0CON1bits `VES236  1 e 1 @795 ]
+[s S95 . 1 `uc 1 SPI1RXIP 1 0 :1:0 
+`uc 1 SPI1TXIP 1 0 :1:1 
+`uc 1 SPI1IP 1 0 :1:2 
+`uc 1 TMR2IP 1 0 :1:3 
+`uc 1 TMR1IP 1 0 :1:4 
+`uc 1 TMR1GIP 1 0 :1:5 
+`uc 1 CCP1IP 1 0 :1:6 
+`uc 1 TMR0IP 1 0 :1:7 
+]
+"31141
+[u S104 . 1 `S95 1 . 1 0 ]
+[v _IPR3bits IPR3bits `VES104  1 e 1 @869 ]
+"39451
+[v _ANSELB ANSELB `VEuc  1 e 1 @1032 ]
+"39513
+[v _WPUB WPUB `VEuc  1 e 1 @1033 ]
+"39575
+[v _ODCONB ODCONB `VEuc  1 e 1 @1034 ]
+"39637
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @1035 ]
+"39699
+[v _INLVLB INLVLB `VEuc  1 e 1 @1036 ]
+"44198
+[v _IVTBASEL IVTBASEL `VEuc  1 e 1 @1117 ]
+"44260
+[v _IVTBASEH IVTBASEH `VEuc  1 e 1 @1118 ]
+"44322
+[v _IVTBASEU IVTBASEU `VEuc  1 e 1 @1119 ]
+[s S53 . 1 `uc 1 SPI1RXIE 1 0 :1:0 
+`uc 1 SPI1TXIE 1 0 :1:1 
+`uc 1 SPI1IE 1 0 :1:2 
+`uc 1 TMR2IE 1 0 :1:3 
+`uc 1 TMR1IE 1 0 :1:4 
+`uc 1 TMR1GIE 1 0 :1:5 
+`uc 1 CCP1IE 1 0 :1:6 
+`uc 1 TMR0IE 1 0 :1:7 
+]
+"45779
+[u S62 . 1 `S53 1 . 1 0 ]
+"45779
+"45779
+[v _PIE3bits PIE3bits `VES62  1 e 1 @1185 ]
+[s S74 . 1 `uc 1 SPI1RXIF 1 0 :1:0 
+`uc 1 SPI1TXIF 1 0 :1:1 
+`uc 1 SPI1IF 1 0 :1:2 
+`uc 1 TMR2IF 1 0 :1:3 
+`uc 1 TMR1IF 1 0 :1:4 
+`uc 1 TMR1GIF 1 0 :1:5 
+`uc 1 CCP1IF 1 0 :1:6 
+`uc 1 TMR0IF 1 0 :1:7 
+]
+"46653
+[u S83 . 1 `S74 1 . 1 0 ]
+"46653
+"46653
+[v _PIR3bits PIR3bits `VES83  1 e 1 @1201 ]
+"47413
+[v _LATB LATB `VEuc  1 e 1 @1215 ]
+"47755
+[v _TRISB TRISB `VEuc  1 e 1 @1223 ]
+[s S27 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"48403
+[s S35 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 GIEH 1 0 :1:7 
+]
+"48403
+[u S38 . 1 `S27 1 . 1 0 `S35 1 . 1 0 ]
+"48403
+"48403
+[v _INTCON0bits INTCON0bits `VES38  1 e 1 @1238 ]
+"18 C:\Users\HP\MPLABXProjects\Ejemplo7_Timer_0.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"30
+} 0
+"6 C:\Users\HP\MPLABXProjects/Ejemplo7_Timer0.X/Timer0.c
+[v _TimerInit TimerInit `(v  1 e 1 0 ]
+{
+[v TimerInit@MT MT `E2  1 a 1 wreg ]
+[v TimerInit@MT MT `E2  1 a 1 wreg ]
+[v TimerInit@MT MT `E2  1 a 1 2 ]
+"38
+} 0
+"7 C:\Users\HP\MPLABXProjects/Ejemplo7_Timer0.X/Interrupt.c
+[v _Interrupt_Config Interrupt_Config `(v  1 e 1 0 ]
+{
+"30
+} 0
+"64 C:\Users\HP\MPLABXProjects/Ejemplo7_Timer0.X/Configuracion.c
+[v _Clock_Config Clock_Config `(v  1 e 1 0 ]
+{
+"68
+} 0
+"41 C:\Users\HP\MPLABXProjects/Ejemplo7_Timer0.X/Interrupt.c
+[v _RutinaLP_ISR RutinaLP_ISR `IIL(v  1 e 1 0 ]
+{
+"43
+} 0
+"33
+[v _RutinaHP_ISR RutinaHP_ISR `IIH(v  1 e 1 0 ]
+{
+"40
+} 0

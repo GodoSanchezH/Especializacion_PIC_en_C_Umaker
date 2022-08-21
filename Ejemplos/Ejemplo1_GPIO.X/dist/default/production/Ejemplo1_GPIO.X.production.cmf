@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\HP\AppData\Local\Temp\xcAssds.o
+$C:\Users\HP\AppData\Local\Temp\xcAsh60.o
 idloc IDLOC 5 200000 200000 20 1
 init CODE 0 1FFFC 1FFFC 4 1
 reset_vec CODE 0 0 0 4 1
@@ -112,12 +112,12 @@ $dist/default/production\Ejemplo1_GPIO.X.production.o
 1FFDA text0 CODE >38:C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo1_GPIO.X\main.c
 1FFDE text0 CODE >43:C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo1_GPIO.X\main.c
 1FFF2 text0 CODE >44:C:\Users\HP\Documents\GitHub\Especializacion_PIC_en_C_Umaker\Ejemplos\Ejemplo1_GPIO.X\main.c
-1FFA8 cinit CODE >3590:C:\Users\HP\AppData\Local\Temp\xcAssds.s
-1FFA8 cinit CODE >3592:C:\Users\HP\AppData\Local\Temp\xcAssds.s
-1FFA8 cinit CODE >3595:C:\Users\HP\AppData\Local\Temp\xcAssds.s
-1FFA8 cinit CODE >3601:C:\Users\HP\AppData\Local\Temp\xcAssds.s
-1FFA8 cinit CODE >3603:C:\Users\HP\AppData\Local\Temp\xcAssds.s
-1FFAA cinit CODE >3604:C:\Users\HP\AppData\Local\Temp\xcAssds.s
+1FFA8 cinit CODE >3590:C:\Users\HP\AppData\Local\Temp\xcAsh60.s
+1FFA8 cinit CODE >3592:C:\Users\HP\AppData\Local\Temp\xcAsh60.s
+1FFA8 cinit CODE >3595:C:\Users\HP\AppData\Local\Temp\xcAsh60.s
+1FFA8 cinit CODE >3601:C:\Users\HP\AppData\Local\Temp\xcAsh60.s
+1FFA8 cinit CODE >3603:C:\Users\HP\AppData\Local\Temp\xcAsh60.s
+1FFAA cinit CODE >3604:C:\Users\HP\AppData\Local\Temp\xcAsh60.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -136,29 +136,29 @@ __Hspace_1 506 0 ABS 0 - dist/default/production\Ejemplo1_GPIO.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\Ejemplo1_GPIO.X.production.o
 __Hspace_4 60000A 0 ABS 0 - dist/default/production\Ejemplo1_GPIO.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Ejemplo1_GPIO.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\HP\AppData\Local\Temp\xcAssds.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\HP\AppData\Local\Temp\xcAsh60.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Ejemplo1_GPIO.X.production.o
 __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\Ejemplo1_GPIO.X.production.o
 _LATF 4C3 0 ABS 0 - dist/default/production\Ejemplo1_GPIO.X.production.o
 _WPUB 409 0 ABS 0 - dist/default/production\Ejemplo1_GPIO.X.production.o
 _WPUF 429 0 ABS 0 - dist/default/production\Ejemplo1_GPIO.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\HP\AppData\Local\Temp\xcAssds.o
+___sp 0 0 STACK 2 stack C:\Users\HP\AppData\Local\Temp\xcAsh60.o
 _main 1FFD6 0 CODE 0 text0 dist/default/production\Ejemplo1_GPIO.X.production.o
-start 1FFFC 0 CODE 0 init C:\Users\HP\AppData\Local\Temp\xcAssds.o
+start 1FFFC 0 CODE 0 init C:\Users\HP\AppData\Local\Temp\xcAsh60.o
 __size_of_main 0 0 ABS 0 - dist/default/production\Ejemplo1_GPIO.X.production.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\Ejemplo1_GPIO.X.production.o
-__accesstop 560 0 ABS 0 - C:\Users\HP\AppData\Local\Temp\xcAssds.o
-intlevel0 0 0 CODE 0 text C:\Users\HP\AppData\Local\Temp\xcAssds.o
-intlevel1 0 0 CODE 0 text C:\Users\HP\AppData\Local\Temp\xcAssds.o
-intlevel2 0 0 CODE 0 text C:\Users\HP\AppData\Local\Temp\xcAssds.o
-intlevel3 0 0 CODE 0 text C:\Users\HP\AppData\Local\Temp\xcAssds.o
+__accesstop 560 0 ABS 0 - C:\Users\HP\AppData\Local\Temp\xcAsh60.o
+intlevel0 0 0 CODE 0 text C:\Users\HP\AppData\Local\Temp\xcAsh60.o
+intlevel1 0 0 CODE 0 text C:\Users\HP\AppData\Local\Temp\xcAsh60.o
+intlevel2 0 0 CODE 0 text C:\Users\HP\AppData\Local\Temp\xcAsh60.o
+intlevel3 0 0 CODE 0 text C:\Users\HP\AppData\Local\Temp\xcAsh60.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Ejemplo1_GPIO.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\Ejemplo1_GPIO.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\Ejemplo1_GPIO.X.production.o
 _ANSELB 408 0 ABS 0 - dist/default/production\Ejemplo1_GPIO.X.production.o
 _ANSELF 428 0 ABS 0 - dist/default/production\Ejemplo1_GPIO.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\HP\AppData\Local\Temp\xcAssds.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\HP\AppData\Local\Temp\xcAssds.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\HP\AppData\Local\Temp\xcAsh60.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\HP\AppData\Local\Temp\xcAsh60.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Ejemplo1_GPIO.X.production.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Ejemplo1_GPIO.X.production.o
 _INLVLB 40C 0 ABS 0 - dist/default/production\Ejemplo1_GPIO.X.production.o
@@ -170,7 +170,7 @@ _ODCONF 42A 0 ABS 0 - dist/default/production\Ejemplo1_GPIO.X.production.o
 _OSCFRQ B1 0 ABS 0 - dist/default/production\Ejemplo1_GPIO.X.production.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Ejemplo1_GPIO.X.production.o
 ___rparam_used 1 0 ABS 0 - dist/default/production\Ejemplo1_GPIO.X.production.o
-isa$xinst 0 0 ABS 0 - C:\Users\HP\AppData\Local\Temp\xcAssds.o
+isa$xinst 0 0 ABS 0 - C:\Users\HP\AppData\Local\Temp\xcAsh60.o
 __Hbank5 0 0 ABS 0 bank5 dist/default/production\Ejemplo1_GPIO.X.production.o
 __Hbank6 0 0 ABS 0 bank6 dist/default/production\Ejemplo1_GPIO.X.production.o
 __Hbank7 0 0 ABS 0 bank7 dist/default/production\Ejemplo1_GPIO.X.production.o
@@ -217,7 +217,7 @@ __Hbank36 0 0 ABS 0 bank36 dist/default/production\Ejemplo1_GPIO.X.production.o
 __Hbank37 0 0 ABS 0 bank37 dist/default/production\Ejemplo1_GPIO.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Ejemplo1_GPIO.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\Ejemplo1_GPIO.X.production.o
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\HP\AppData\Local\Temp\xcAssds.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\HP\AppData\Local\Temp\xcAsh60.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\Ejemplo1_GPIO.X.production.o
 __Hconfig 30000A 0 CONFIG 4 config dist/default/production\Ejemplo1_GPIO.X.production.o
 __Lbank5 0 0 ABS 0 bank5 dist/default/production\Ejemplo1_GPIO.X.production.o
@@ -299,9 +299,9 @@ __Lcomram 0 0 ABS 0 comram dist/default/production\Ejemplo1_GPIO.X.production.o
 __Lconfig 0 0 CONFIG 4 config dist/default/production\Ejemplo1_GPIO.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Ejemplo1_GPIO.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\Ejemplo1_GPIO.X.production.o
-isa$std 1 0 ABS 0 - C:\Users\HP\AppData\Local\Temp\xcAssds.o
-stackhi 25FF 0 ABS 0 - C:\Users\HP\AppData\Local\Temp\xcAssds.o
-stacklo 560 0 ABS 0 - C:\Users\HP\AppData\Local\Temp\xcAssds.o
+isa$std 1 0 ABS 0 - C:\Users\HP\AppData\Local\Temp\xcAsh60.o
+stackhi 25FF 0 ABS 0 - C:\Users\HP\AppData\Local\Temp\xcAsh60.o
+stacklo 560 0 ABS 0 - C:\Users\HP\AppData\Local\Temp\xcAsh60.o
 _OSCCON1 AD 0 ABS 0 - dist/default/production\Ejemplo1_GPIO.X.production.o
 __Lirdata 0 0 CODE 0 irdata dist/default/production\Ejemplo1_GPIO.X.production.o
 __Lspace_0 0 0 ABS 0 - dist/default/production\Ejemplo1_GPIO.X.production.o
@@ -320,7 +320,7 @@ __ptext0 1FFD6 0 CODE 0 text0 dist/default/production\Ejemplo1_GPIO.X.production
 __ptext1 1FFBA 0 CODE 0 text1 dist/default/production\Ejemplo1_GPIO.X.production.o
 __ptext2 1FFAE 0 CODE 0 text2 dist/default/production\Ejemplo1_GPIO.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\Ejemplo1_GPIO.X.production.o
-__ramtop 2600 0 RAM 0 ramtop C:\Users\HP\AppData\Local\Temp\xcAssds.o
+__ramtop 2600 0 RAM 0 ramtop C:\Users\HP\AppData\Local\Temp\xcAsh60.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\Ejemplo1_GPIO.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Ejemplo1_GPIO.X.production.o
 __size_of_Clock_Config 0 0 ABS 0 - dist/default/production\Ejemplo1_GPIO.X.production.o
