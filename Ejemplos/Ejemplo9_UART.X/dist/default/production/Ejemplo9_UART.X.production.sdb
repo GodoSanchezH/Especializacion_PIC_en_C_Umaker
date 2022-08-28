@@ -1,0 +1,316 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F57Q43 ]
+[d frameptr 1249 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"65 C:\Users\HP\MPLABXProjects\Ejemplo9_UART.X\Configuracion.c
+[v _Clock_Config Clock_Config `(v  1 e 1 0 ]
+"33 C:\Users\HP\MPLABXProjects\Ejemplo9_UART.X\Interrupt.c
+[v _RutinaHP_ISR RutinaHP_ISR `IIH(v  1 e 1 0 ]
+"41
+[v _RutinaLP_ISR RutinaLP_ISR `IIL(v  1 e 1 0 ]
+"19 C:\Users\HP\MPLABXProjects\Ejemplo9_UART.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"7 C:\Users\HP\MPLABXProjects\Ejemplo9_UART.X\Uart.c
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+"52
+[v _UART_Print_Char UART_Print_Char `(v  1 e 1 0 ]
+"59
+[v _UART_Print_String UART_Print_String `(v  1 e 1 0 ]
+"5210 C:/Users/HP/.mchp_packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q43.h
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
+"5448
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @177 ]
+"10604
+[v _RF0PPS RF0PPS `VEuc  1 e 1 @553 ]
+"14778
+[v _U1RXPPS U1RXPPS `VEuc  1 e 1 @626 ]
+"17105
+[v _U1TXB U1TXB `VEuc  1 e 1 @675 ]
+[s S166 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+]
+"17337
+[s S171 . 1 `uc 1 U1MODE 1 0 :4:0 
+`uc 1 U1RXEN 1 0 :1:4 
+`uc 1 U1TXEN 1 0 :1:5 
+`uc 1 U1ABDEN 1 0 :1:6 
+`uc 1 U1BRGS 1 0 :1:7 
+]
+[s S177 . 1 `uc 1 U1MODE0 1 0 :1:0 
+`uc 1 U1MODE1 1 0 :1:1 
+`uc 1 U1MODE2 1 0 :1:2 
+`uc 1 U1MODE3 1 0 :1:3 
+]
+[s S182 . 1 `uc 1 MODE 1 0 :4:0 
+`uc 1 RXEN 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 ABDEN 1 0 :1:6 
+`uc 1 BRGS 1 0 :1:7 
+]
+[u S188 . 1 `S166 1 . 1 0 `S171 1 . 1 0 `S177 1 . 1 0 `S182 1 . 1 0 ]
+[v _U1CON0bits U1CON0bits `VES188  1 e 1 @683 ]
+[s S217 . 1 `uc 1 SENDB 1 0 :1:0 
+`uc 1 BRKOVR 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 RXBIMD 1 0 :1:3 
+`uc 1 WUE 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 ON 1 0 :1:7 
+]
+"17457
+[s S225 . 1 `uc 1 U1SENDB 1 0 :1:0 
+`uc 1 U1BRKOVR 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 U1RXBIMD 1 0 :1:3 
+`uc 1 U1WUE 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 U1ON 1 0 :1:7 
+]
+[u S233 . 1 `S217 1 . 1 0 `S225 1 . 1 0 ]
+[v _U1CON1bits U1CON1bits `VES233  1 e 1 @684 ]
+"17654
+[v _U1BRG U1BRG `VEus  1 e 2 @686 ]
+[s S381 . 1 `uc 1 TXCIF 1 0 :1:0 
+`uc 1 RXFOIF 1 0 :1:1 
+`uc 1 RXBKIF 1 0 :1:2 
+`uc 1 FERIF 1 0 :1:3 
+`uc 1 CERIF 1 0 :1:4 
+`uc 1 ABDOVF 1 0 :1:5 
+`uc 1 PERIF 1 0 :1:6 
+`uc 1 TXMTIF 1 0 :1:7 
+]
+"17914
+[s S390 . 1 `uc 1 U1TXCIF 1 0 :1:0 
+`uc 1 U1RXFOIF 1 0 :1:1 
+`uc 1 U1RXBKIF 1 0 :1:2 
+`uc 1 U1FERIF 1 0 :1:3 
+`uc 1 U1CERIF 1 0 :1:4 
+`uc 1 U1ABDOVF 1 0 :1:5 
+`uc 1 U1PERIF 1 0 :1:6 
+`uc 1 U1TXMTIF 1 0 :1:7 
+]
+[u S399 . 1 `S381 1 . 1 0 `S390 1 . 1 0 ]
+[v _U1ERRIRbits U1ERRIRbits `VES399  1 e 1 @690 ]
+"23298
+[v _TMR0L TMR0L `VEuc  1 e 1 @792 ]
+"23436
+[v _TMR0H TMR0H `VEuc  1 e 1 @793 ]
+[s S95 . 1 `uc 1 SPI1RXIP 1 0 :1:0 
+`uc 1 SPI1TXIP 1 0 :1:1 
+`uc 1 SPI1IP 1 0 :1:2 
+`uc 1 TMR2IP 1 0 :1:3 
+`uc 1 TMR1IP 1 0 :1:4 
+`uc 1 TMR1GIP 1 0 :1:5 
+`uc 1 CCP1IP 1 0 :1:6 
+`uc 1 TMR0IP 1 0 :1:7 
+]
+"31140
+[u S104 . 1 `S95 1 . 1 0 ]
+[v _IPR3bits IPR3bits `VES104  1 e 1 @869 ]
+[s S275 . 1 `uc 1 ANSELF0 1 0 :1:0 
+`uc 1 ANSELF1 1 0 :1:1 
+`uc 1 ANSELF2 1 0 :1:2 
+`uc 1 ANSELF3 1 0 :1:3 
+`uc 1 ANSELF4 1 0 :1:4 
+`uc 1 ANSELF5 1 0 :1:5 
+`uc 1 ANSELF6 1 0 :1:6 
+`uc 1 ANSELF7 1 0 :1:7 
+]
+"41166
+[u S284 . 1 `S275 1 . 1 0 ]
+"41166
+"41166
+[v _ANSELFbits ANSELFbits `VES284  1 e 1 @1064 ]
+[s S296 . 1 `uc 1 WPUF0 1 0 :1:0 
+`uc 1 WPUF1 1 0 :1:1 
+`uc 1 WPUF2 1 0 :1:2 
+`uc 1 WPUF3 1 0 :1:3 
+`uc 1 WPUF4 1 0 :1:4 
+`uc 1 WPUF5 1 0 :1:5 
+`uc 1 WPUF6 1 0 :1:6 
+`uc 1 WPUF7 1 0 :1:7 
+]
+"41228
+[u S305 . 1 `S296 1 . 1 0 ]
+"41228
+"41228
+[v _WPUFbits WPUFbits `VES305  1 e 1 @1065 ]
+[s S359 . 1 `uc 1 ODCF0 1 0 :1:0 
+`uc 1 ODCF1 1 0 :1:1 
+`uc 1 ODCF2 1 0 :1:2 
+`uc 1 ODCF3 1 0 :1:3 
+`uc 1 ODCF4 1 0 :1:4 
+`uc 1 ODCF5 1 0 :1:5 
+`uc 1 ODCF6 1 0 :1:6 
+`uc 1 ODCF7 1 0 :1:7 
+]
+"41290
+[u S368 . 1 `S359 1 . 1 0 ]
+"41290
+"41290
+[v _ODCONFbits ODCONFbits `VES368  1 e 1 @1066 ]
+[s S338 . 1 `uc 1 SLRF0 1 0 :1:0 
+`uc 1 SLRF1 1 0 :1:1 
+`uc 1 SLRF2 1 0 :1:2 
+`uc 1 SLRF3 1 0 :1:3 
+`uc 1 SLRF4 1 0 :1:4 
+`uc 1 SLRF5 1 0 :1:5 
+`uc 1 SLRF6 1 0 :1:6 
+`uc 1 SLRF7 1 0 :1:7 
+]
+"41352
+[u S347 . 1 `S338 1 . 1 0 ]
+"41352
+"41352
+[v _SLRCONFbits SLRCONFbits `VES347  1 e 1 @1067 ]
+[s S317 . 1 `uc 1 INLVLF0 1 0 :1:0 
+`uc 1 INLVLF1 1 0 :1:1 
+`uc 1 INLVLF2 1 0 :1:2 
+`uc 1 INLVLF3 1 0 :1:3 
+`uc 1 INLVLF4 1 0 :1:4 
+`uc 1 INLVLF5 1 0 :1:5 
+`uc 1 INLVLF6 1 0 :1:6 
+`uc 1 INLVLF7 1 0 :1:7 
+]
+"41414
+[u S326 . 1 `S317 1 . 1 0 ]
+"41414
+"41414
+[v _INLVLFbits INLVLFbits `VES326  1 e 1 @1068 ]
+"44359
+[v _IVTBASEL IVTBASEL `VEuc  1 e 1 @1117 ]
+"44421
+[v _IVTBASEH IVTBASEH `VEuc  1 e 1 @1118 ]
+"44483
+[v _IVTBASEU IVTBASEU `VEuc  1 e 1 @1119 ]
+[s S53 . 1 `uc 1 SPI1RXIE 1 0 :1:0 
+`uc 1 SPI1TXIE 1 0 :1:1 
+`uc 1 SPI1IE 1 0 :1:2 
+`uc 1 TMR2IE 1 0 :1:3 
+`uc 1 TMR1IE 1 0 :1:4 
+`uc 1 TMR1GIE 1 0 :1:5 
+`uc 1 CCP1IE 1 0 :1:6 
+`uc 1 TMR0IE 1 0 :1:7 
+]
+"45940
+[u S62 . 1 `S53 1 . 1 0 ]
+"45940
+"45940
+[v _PIE3bits PIE3bits `VES62  1 e 1 @1185 ]
+[s S74 . 1 `uc 1 SPI1RXIF 1 0 :1:0 
+`uc 1 SPI1TXIF 1 0 :1:1 
+`uc 1 SPI1IF 1 0 :1:2 
+`uc 1 TMR2IF 1 0 :1:3 
+`uc 1 TMR1IF 1 0 :1:4 
+`uc 1 TMR1GIF 1 0 :1:5 
+`uc 1 CCP1IF 1 0 :1:6 
+`uc 1 TMR0IF 1 0 :1:7 
+]
+"46814
+[u S83 . 1 `S74 1 . 1 0 ]
+"46814
+"46814
+[v _PIR3bits PIR3bits `VES83  1 e 1 @1201 ]
+"47574
+[v _LATB LATB `VEuc  1 e 1 @1215 ]
+[s S254 . 1 `uc 1 TRISF0 1 0 :1:0 
+`uc 1 TRISF1 1 0 :1:1 
+`uc 1 TRISF2 1 0 :1:2 
+`uc 1 TRISF3 1 0 :1:3 
+`uc 1 TRISF4 1 0 :1:4 
+`uc 1 TRISF5 1 0 :1:5 
+`uc 1 TRISF6 1 0 :1:6 
+`uc 1 TRISF7 1 0 :1:7 
+]
+"48151
+[u S263 . 1 `S254 1 . 1 0 ]
+"48151
+"48151
+[v _TRISFbits TRISFbits `VES263  1 e 1 @1227 ]
+[s S27 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"48564
+[s S35 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 GIEH 1 0 :1:7 
+]
+"48564
+[u S38 . 1 `S27 1 . 1 0 `S35 1 . 1 0 ]
+"48564
+"48564
+[v _INTCON0bits INTCON0bits `VES38  1 e 1 @1238 ]
+"19 C:\Users\HP\MPLABXProjects\Ejemplo9_UART.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"34
+} 0
+"59 C:\Users\HP\MPLABXProjects\Ejemplo9_UART.X\Uart.c
+[v _UART_Print_String UART_Print_String `(v  1 e 1 0 ]
+{
+"61
+[v UART_Print_String@ptr ptr `*.32uc  1 a 2 3 ]
+"59
+[v UART_Print_String@a a `*.32uc  1 p 2 1 ]
+"68
+} 0
+"52
+[v _UART_Print_Char UART_Print_Char `(v  1 e 1 0 ]
+{
+[v UART_Print_Char@a a `uc  1 a 1 wreg ]
+[v UART_Print_Char@a a `uc  1 a 1 wreg ]
+[v UART_Print_Char@a a `uc  1 a 1 0 ]
+"57
+} 0
+"7
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+{
+[v UART_Init@baudios baudios `ul  1 p 4 0 ]
+"49
+} 0
+"65 C:\Users\HP\MPLABXProjects\Ejemplo9_UART.X\Configuracion.c
+[v _Clock_Config Clock_Config `(v  1 e 1 0 ]
+{
+"69
+} 0
+"41 C:\Users\HP\MPLABXProjects\Ejemplo9_UART.X\Interrupt.c
+[v _RutinaLP_ISR RutinaLP_ISR `IIL(v  1 e 1 0 ]
+{
+"43
+} 0
+"33
+[v _RutinaHP_ISR RutinaHP_ISR `IIH(v  1 e 1 0 ]
+{
+"40
+} 0
