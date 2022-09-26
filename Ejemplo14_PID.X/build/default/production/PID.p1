@@ -1,0 +1,89 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"15 ./PID.h
+[; ;./PID.h: 15: typedef struct{
+[s S1 `f 1 `f 1 `f 1 `f 1 `f 1 `f 1 `f 1 `f 1 `f 1 `f 1 `f 1 `f 1 `f 1 ]
+[n S1 . Kp Ki Kd Tau Lmax Lmin Ts Derivador Integrador Proporcional Error_Anterior Medida_Anterior uk ]
+"4 PID.c
+[; ;PID.c: 4: void Controlador_PID(ControladorPID *pid){
+[v _Controlador_PID `(v ~T0 @X0 1 ef1`*S1 ]
+{
+[e :U _Controlador_PID ]
+[v _pid `*S1 ~T0 @X0 1 r1 ]
+[f ]
+"5
+[; ;PID.c: 5:     pid->Derivador=0.0;
+[e = . *U _pid 7 -> .0.0 `f ]
+"6
+[; ;PID.c: 6:     pid->Integrador=0.0;
+[e = . *U _pid 8 -> .0.0 `f ]
+"7
+[; ;PID.c: 7:     pid->Error_Anterior=0.0;
+[e = . *U _pid 10 -> .0.0 `f ]
+"8
+[; ;PID.c: 8:     pid->Medida_Anterior=0.0;
+[e = . *U _pid 11 -> .0.0 `f ]
+"9
+[; ;PID.c: 9:     pid->uk=0.0;
+[e = . *U _pid 12 -> .0.0 `f ]
+"11
+[; ;PID.c: 11: }
+[e :UE 3 ]
+}
+"13
+[; ;PID.c: 13: float ControladorPID_Calculo(ControladorPID *pid,float referencia,float medicion){
+[v _ControladorPID_Calculo `(f ~T0 @X0 1 ef3`*S1`f`f ]
+{
+[e :U _ControladorPID_Calculo ]
+[v _pid `*S1 ~T0 @X0 1 r1 ]
+[v _referencia `f ~T0 @X0 1 r2 ]
+[v _medicion `f ~T0 @X0 1 r3 ]
+[f ]
+"15
+[; ;PID.c: 15:     float error;
+[v _error `f ~T0 @X0 1 a ]
+"16
+[; ;PID.c: 16:     error= referencia - medicion;
+[e = _error - _referencia _medicion ]
+"20
+[; ;PID.c: 20:     pid->Proporcional = error*pid->Kp;
+[e = . *U _pid 9 * _error . *U _pid 0 ]
+"24
+[; ;PID.c: 24:     pid->Integrador = pid->Integrador + 0.5*pid->Ki*pid->Ts*(error + pid->Error_Anterior);
+[e = . *U _pid 8 -> + -> . *U _pid 8 `d * * * .0.5 -> . *U _pid 1 `d -> . *U _pid 6 `d -> + _error . *U _pid 10 `d `f ]
+"28
+[; ;PID.c: 28:      pid->Derivador = -(2.0f*pid->Kd * (medicion-pid->Medida_Anterior)
+[e = . *U _pid 7 / -U + * * -> .2.0 `f . *U _pid 2 - _medicion . *U _pid 11 * - * -> .2.0 `f . *U _pid 3 . *U _pid 6 . *U _pid 7 + * -> .2.0 `f . *U _pid 3 . *U _pid 6 ]
+"35
+[; ;PID.c: 35:     pid->uk = pid->Proporcional + pid->Integrador +pid->Derivador;
+[e = . *U _pid 12 + + . *U _pid 9 . *U _pid 8 . *U _pid 7 ]
+"38
+[; ;PID.c: 38:             if(pid->uk > pid->Lmax) pid->uk = pid->Lmax;
+[e $ ! > . *U _pid 12 . *U _pid 4 5  ]
+[e = . *U _pid 12 . *U _pid 4 ]
+[e $U 6  ]
+"39
+[; ;PID.c: 39:      else if(pid->uk < pid->Lmin) pid->uk = pid->Lmin;
+[e :U 5 ]
+[e $ ! < . *U _pid 12 . *U _pid 5 7  ]
+[e = . *U _pid 12 . *U _pid 5 ]
+[e $U 8  ]
+"40
+[; ;PID.c: 40:      else pid->uk = pid->uk;
+[e :U 7 ]
+[e = . *U _pid 12 . *U _pid 12 ]
+[e :U 8 ]
+[e :U 6 ]
+"43
+[; ;PID.c: 43:             pid->Error_Anterior = error;
+[e = . *U _pid 10 _error ]
+"44
+[; ;PID.c: 44:             pid->Medida_Anterior = medicion;
+[e = . *U _pid 11 _medicion ]
+"46
+[; ;PID.c: 46:     return pid->uk;
+[e ) . *U _pid 12 ]
+[e $UE 4  ]
+"47
+[; ;PID.c: 47: }
+[e :UE 4 ]
+}
