@@ -49,9 +49,6 @@
 */
 #include <xc.h>
 #include "uart1.h"
-#include "pin_manager.h"
-#include <string.h>
-#include <stdlib.h>
 
 /**
   Section: Macro Declarations
@@ -225,16 +222,7 @@ void UART1_Write(uint8_t txData)
 }
 
 
-void UART_Print_String(char *a){
 
-    char *ptr;
-    ptr = a;
-    
-    while(*ptr)  
-        UART1_Write(*ptr++);
-    
-    
-}
 
 
 void UART1_Transmit_ISR(void)
@@ -256,9 +244,18 @@ void UART1_Transmit_ISR(void)
     
     // or set custom function using UART1_SetTxInterruptHandler()
 }
-uint8_t data_rx[50];
-uint8_t j=0;
-float ref;
+
+void UART_Print_String(char *a){
+
+    char *ptr;
+    ptr = a;
+    
+    while(*ptr)  
+        UART1_Write(*ptr++);
+    
+    
+}
+
 void UART1_Receive_ISR(void)
 {
     // use this default receive interrupt handler code
@@ -281,32 +278,6 @@ void UART1_Receive_ISR(void)
     }
 
     // or set custom function using UART1_SetRxInterruptHandler()
-    
-    char byte = U1RXB;
-    
-    if (byte == 'D') {
-        M1_SetHigh();
-        M2_SetLow();
-    }
-    else     if (byte == 'I') {
-        M2_SetHigh();
-        M1_SetLow();
-    }
-    else if(byte=='x'){
-            ref = atof(data_rx);
-            memset(data_rx,0,j);
-            j=0;
-    
-    }else{
-    
-        data_rx[j]=byte;
-        j++;
-    }
-
-    
-    
-    
-    
 }
 
 void UART1_RxDataHandler(void){

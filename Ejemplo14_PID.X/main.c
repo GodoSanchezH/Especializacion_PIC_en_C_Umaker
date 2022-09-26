@@ -54,31 +54,32 @@
 
 
 ControladorPID MotorDC = {PID_KP,PID_KI,PID_KD,PID_TAU,PID_LMAX,PID_LMIN,PID_TS};
-//ControladorPID ServoMotor;
-//ControladorPID Horno;
 
-/*
-                         Main application
- */
+
 void main(void)
 {
     // Initialize the device
     SYSTEM_Initialize();
-    Controlador_PID(&MotorDC);
+
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts
     // Use the following macros to:
 
-    // Enable the Global Interrupts
-    INTERRUPT_GlobalInterruptEnable();
+    // Enable high priority global interrupts
+    INTERRUPT_GlobalInterruptHighEnable();
 
-    // Disable the Global Interrupts
-    //INTERRUPT_GlobalInterruptDisable();
-       
-        
+    // Enable low priority global interrupts.
+    INTERRUPT_GlobalInterruptLowEnable();
+
+    // Disable high priority global interrupts
+    //INTERRUPT_GlobalInterruptHighDisable();
+
+    // Disable low priority global interrupts.
+    //INTERRUPT_GlobalInterruptLowDisable();
+    Controlador_PID(&MotorDC);
     while (1)
     {
-        
+        // Add your application code
     }
 }
 /**

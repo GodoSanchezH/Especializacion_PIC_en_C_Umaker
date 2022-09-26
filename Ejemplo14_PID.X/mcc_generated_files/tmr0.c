@@ -50,12 +50,6 @@
 
 #include <xc.h>
 #include "tmr0.h"
-#include "pin_manager.h"
-#include "uart1.h"
-#include "pwm1.h"
-#include "../PID.h"
-#include <stdio.h>
-
 
 /**
   Section: Global Variables Definitions
@@ -136,12 +130,7 @@ void TMR0_Reload(void)
     TMR0H = timer0ReloadVal16bit >> 8;
     TMR0L = (uint8_t) timer0ReloadVal16bit;
 }
-uint16_t PULSOS;
-float  rpm,FrecAngular;
-uint8_t data_TX[50];
-extern float ref;
-extern ControladorPID MotorDC;
-float U;
+
 void TMR0_ISR(void)
 {
     // clear the TMR0 interrupt flag
@@ -150,29 +139,11 @@ void TMR0_ISR(void)
     TMR0H = timer0ReloadVal16bit >> 8;
     TMR0L = (uint8_t) timer0ReloadVal16bit;
 
-    
-
     if(TMR0_InterruptHandler)
     {
         TMR0_InterruptHandler();
     }
 
-    PULSOS = (TMR1H<<8) + TMR1L;
-    TMR1H =0;
-    TMR1L =0;
-    /*calculode rmp y la frecuencia angular*/
-    
-    rpm = PULSOS*60.0/(0.01*120);
-    FrecAngular = rpm*(2*3.14159265359)/60;//W
-    
-    /*calculo del pid*/
-    U = ControladorPID_Calculo(&MotorDC,ref,FrecAngular)*799/12.0;
-    
-    PWM1_LoadDutyValue((uint16_t) U);
-    
-    sprintf(data_TX,"%.2f\n\r",FrecAngular);
-    UART_Print_String(data_TX);
-    
     // add your TMR0 interrupt custom code
 }
 
