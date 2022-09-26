@@ -138,7 +138,8 @@ void __interrupt(low_priority) INTERRUPT_InterruptManagerLow (void)
     PWM1_LoadDutyValue((uint16_t) U);
     
     sprintf(data_TX,"%.2f\n\r",FrecAngular);
-    UART_Print_String(data_TX); 
+    UART_Print_String(data_TX);
+      memset(data_TX,0,49);
         
         
     }

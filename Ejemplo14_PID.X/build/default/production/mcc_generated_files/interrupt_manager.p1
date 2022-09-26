@@ -2902,37 +2902,40 @@ Version 4.0 HI-TECH Software Intermediate Code
 "141
 [; ;mcc_generated_files/interrupt_manager.c: 141:     UART_Print_String(data_TX);
 [e ( _UART_Print_String (1 &U _data_TX ]
-"144
-[; ;mcc_generated_files/interrupt_manager.c: 144:     }
+"142
+[; ;mcc_generated_files/interrupt_manager.c: 142:       memset(data_TX,0,49);
+[e ( _memset (3 , , -> &U _data_TX `*v -> 0 `i -> -> 49 `i `ui ]
+"145
+[; ;mcc_generated_files/interrupt_manager.c: 145:     }
 }
 [e $U 2373  ]
-"145
-[; ;mcc_generated_files/interrupt_manager.c: 145:     else if(PIE4bits.U1TXIE == 1 && PIR4bits.U1TXIF == 1)
+"146
+[; ;mcc_generated_files/interrupt_manager.c: 146:     else if(PIE4bits.U1TXIE == 1 && PIR4bits.U1TXIF == 1)
 [e :U 2372 ]
 [e $ ! && == -> . . _PIE4bits 0 1 `i -> 1 `i == -> . . _PIR4bits 0 1 `i -> 1 `i 2374  ]
-"146
-[; ;mcc_generated_files/interrupt_manager.c: 146:     {
-{
 "147
-[; ;mcc_generated_files/interrupt_manager.c: 147:         UART1_TxInterruptHandler();
-[e ( *U _UART1_TxInterruptHandler ..  ]
+[; ;mcc_generated_files/interrupt_manager.c: 147:     {
+{
 "148
-[; ;mcc_generated_files/interrupt_manager.c: 148:     }
+[; ;mcc_generated_files/interrupt_manager.c: 148:         UART1_TxInterruptHandler();
+[e ( *U _UART1_TxInterruptHandler ..  ]
+"149
+[; ;mcc_generated_files/interrupt_manager.c: 149:     }
 }
 [e $U 2375  ]
-"149
-[; ;mcc_generated_files/interrupt_manager.c: 149:     else
-[e :U 2374 ]
 "150
-[; ;mcc_generated_files/interrupt_manager.c: 150:     {
+[; ;mcc_generated_files/interrupt_manager.c: 150:     else
+[e :U 2374 ]
+"151
+[; ;mcc_generated_files/interrupt_manager.c: 151:     {
 {
-"152
-[; ;mcc_generated_files/interrupt_manager.c: 152:     }
+"153
+[; ;mcc_generated_files/interrupt_manager.c: 153:     }
 }
 [e :U 2375 ]
 [e :U 2373 ]
-"153
-[; ;mcc_generated_files/interrupt_manager.c: 153: }
+"154
+[; ;mcc_generated_files/interrupt_manager.c: 154: }
 [e :UE 2371 ]
 }
 [p f _sprintf 8462336 ]

@@ -29389,6 +29389,7 @@ void __attribute__((picinterrupt(("low_priority")))) INTERRUPT_InterruptManagerL
 
     sprintf(data_TX,"%.2f\n\r",FrecAngular);
     UART_Print_String(data_TX);
+      memset(data_TX,0,49);
 
 
     }
